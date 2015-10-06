@@ -1,2 +1,2 @@
 #Goalr
-hello world
+An app that keeps record of your goals. 
