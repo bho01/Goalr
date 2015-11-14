@@ -1,3 +1,15 @@
 body{
-  
+  background-color: grey;
+}
+.font{
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+#goalr{
+  letter-spacing: 2;
+  font-size: 20;
+  font-weight: 300;
+}
+#sub{
+  font-size: 10;
+  font-weight: 200;
 }

@@ -1,0 +1,19 @@
+{
+  "name": "goalr",
+  "version": "1.0.0",
+  "description": "Goalr",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ClevererMango27/Goalr.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ClevererMango27/Goalr/issues"
+  },
+  "homepage": "https://github.com/ClevererMango27/Goalr#readme"
+}
