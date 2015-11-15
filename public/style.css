@@ -5,11 +5,14 @@ body{
   font-family: 'Open Sans Condensed', sans-serif;
 }
 #goalr{
-  letter-spacing: 2;
-  font-size: 20;
+  letter-spacing: 4px;
+  font-size: 7em;
   font-weight: 300;
+  text-align : center;
+
 }
 #sub{
-  font-size: 10;
+  font-size: 3em;
   font-weight: 200;
+  text-align: center;
 }
