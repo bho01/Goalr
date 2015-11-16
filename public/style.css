@@ -6,13 +6,19 @@ body{
 }
 #goalr{
   letter-spacing: 4px;
-  font-size: 7em;
+  font-size: 2em;
   font-weight: 300;
-  text-align : center;
-
+  color: white;
+  background-color: black;
+  display: inline;
+}
+#goalr:hover{
+  color: black;
+  background-color: white;
 }
 #sub{
   font-size: 3em;
   font-weight: 200;
   text-align: center;
+  margin-top: 150;
 }
