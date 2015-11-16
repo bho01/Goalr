@@ -4,21 +4,35 @@ body{
 .font{
   font-family: 'Open Sans Condensed', sans-serif;
 }
-#goalr{
-  letter-spacing: 4px;
+#nav{
+  width: 100%;
+  float: left;
+  margin: 0 0 3em 0;
+  list-style: none;
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc;
   font-size: 2em;
+  background-color: black;
+}
+#nav li{
+  float:left;
+}
+#nav li a{
+  display: block;
+  padding: 8px 15px;
+  text-decoration: none;
   font-weight: 300;
   color: white;
-  background-color: black;
-  display: inline;
+  letter-spacing: 4px;
+  font-family: 'Open Sans Condensed', sans-serif;
 }
-#goalr:hover{
+#nav li a:hover{
   color: black;
   background-color: white;
 }
-#sub{
-  font-size: 3em;
-  font-weight: 200;
+}
+h1{
+  font-family: 'Open Sans Condensed', sans-serif;
   text-align: center;
-  margin-top: 150;
+  font-weight: 300;
 }
