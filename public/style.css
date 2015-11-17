@@ -9,9 +9,10 @@ body{
   font-weight: 300;
   margin-left: 20;
   letter-spacing: 0.50em;
+  color: white;
 }
 #fail:hover{
-  color: white;
+  color: black;
 }
 #sub{
   font-size: 4em;
