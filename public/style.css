@@ -33,3 +33,7 @@ a{
   border:1px
   background-color: grey;
 }
+#pbar{
+  font-size: 1em;
+  font-weight: 500;
+}
