@@ -8,11 +8,16 @@ body{
   font-size: 2em;
   font-weight: 300;
   margin-left: 20;
-  letter-spacing: 4em;
-
+  letter-spacing: 0.50em;
+}
+#fail:hover{
+  color: white;
 }
 #sub{
-  font-size: 5em;
+  font-size: 4em;
   text-align: center;
   font-weight: 300;
+  margin-top: 150;
+  font-size: 30;
+  letter-spacing: 0.15em;
 }
