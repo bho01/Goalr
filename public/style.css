@@ -10,9 +10,13 @@ body{
   margin-left: 20;
   letter-spacing: 0.50em;
   color: white;
+  display: inline;
 }
-#fail:hover{
-  color: black;
+a{
+  color: white;
+}
+#fail a:hover{
+  color: #87ceeb;
 }
 #sub{
   font-size: 4em;
@@ -21,16 +25,11 @@ body{
   margin-top: 150;
   font-size: 30;
   letter-spacing: 0.15em;
+  color: #87ceeb;
 }
-#container{
-  width: 100%;
+.container{
+  width: 5px;
   height: 50px;
-  border:1px solid black;
-}
-#progress-bar{
-  width:50%;
-  height:45px;
-}
-#progressid{
-  vertical-align: middle;
+  border:1px
+  background-color: grey;
 }
