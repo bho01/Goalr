@@ -1,5 +1,5 @@
-body{
-  background-color: grey;
+#hundred{
+  background-color: #808080;
 }
 .font{
   font-family: 'Open Sans Condensed', sans-serif;
@@ -15,8 +15,11 @@ body{
 a{
   color: white;
 }
-#fail a:hover{
-  color: #87ceeb;
+#fail:hover{
+  color: #000000;
+}
+#fail {
+	color: #ffffff;
 }
 #sub{
   font-size: 4em;
@@ -31,9 +34,11 @@ a{
   width: 5px;
   height: 50px;
   border:1px
-  background-color: grey;
+  background-color: #808080;
 }
 #pbar{
+	
+	padding:10px;
   font-size: 2em;
   font-weight: 500;
   color: #87ceeb;
