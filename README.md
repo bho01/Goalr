@@ -2,6 +2,7 @@
 Too fat? Need to lose some weight? Want to get to that college? Get that A++.
 A web app that hopefully goes to the Google Play Store and the iOS App Store!
 
-##Contributors
-*Brendon Ho[brendonho01] - Creator/Developer
-*Ivan Chau[ichauster] - Developer
+###Contributors
+*Brendon Ho[(brendonho01)](https://github.com/brendonho01) - Creator/Developer
+
+*Ivan Chau[(ichauster)](https://github.com/ichauster) - Developer
