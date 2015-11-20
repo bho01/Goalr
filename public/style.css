@@ -43,7 +43,8 @@ a{
   font-weight: 500;
   color: #87ceeb;
 }
+
 #plus{
-  margin-left: 20;
-  font-size: 1.5em;
-}
+  margin-left: 50;
+  margin-top: 50;
+  font-size: 2em;
