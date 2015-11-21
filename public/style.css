@@ -29,6 +29,7 @@ a{
   font-size: 30;
   letter-spacing: 0.15em;
   color: #87ceeb;
+  padding-bottom:10px;
 }
 .container{
   width: 5px;
@@ -43,7 +44,11 @@ a{
   font-weight: 500;
   color: #87ceeb;
 }
-
+#goalRow{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width:50%;
+}
 #plus{
   margin-left: 100;
   margin-top: 50;
