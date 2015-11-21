@@ -1,6 +1,42 @@
 #hundred{
   background-color: #808080;
 }
+@font-face{
+  font-family: 'Pier';
+  src:url(Pier/pier-regular.otf) format('opentype');
+}
+header{
+  position: relative;
+  width:100%;
+  height:100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  background-color:#000;
+  font-family: 'Pier';
+}
+#full{
+  position:relative;
+  width:100%;
+  height:100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+
+}
+#gr{
+  display:table;
+}
+header h1{
+  color:white;
+}
+.text-vertical-center{
+     display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
 .font{
   font-family: 'Open Sans Condensed', sans-serif;
 }
@@ -11,6 +47,15 @@
   letter-spacing: 0.50em;
   color: white;
   display: inline;
+}
+#scrolldown{
+  vertical-align: bottom;
+  display:table-row;
+  text-align: center;
+  height:40px;
+  color:#ffffff;
+  -webkit-animation: bounce 4s infinite;
+  animation: bounce 4s infinite;
 }
 a{
   color: white;
@@ -58,3 +103,28 @@ a{
 #plus:hover{
   color: black;
 }
+@-webkit-keyframes bounce {
+  0%, 60%, 75%, 90%, 100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); }
+
+  70% {
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px); }
+
+  80% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px); } }
+
+@keyframes bounce {
+  0%, 60%, 75%, 90%, 100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); }
+
+  70% {
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px); }
+
+  80% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px); } }
