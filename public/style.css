@@ -66,13 +66,14 @@ a{
 	color: #ffffff;
 }
 #sub{
+  font-family: "Helvetica Neue"
   font-size: 4em;
   text-align: center;
   font-weight: 300;
   margin-top: 150;
   font-size: 30;
-  letter-spacing: 0.15em;
-  color: #87ceeb;
+  letter-spacing: 0.04em;
+  color: #fff;
   padding-bottom:10px;
 }
 
