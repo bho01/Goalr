@@ -97,6 +97,12 @@ a{
 #plus:hover{
   color: black;
 }
+#textInput{
+  color:white;
+}
+#glr{
+  color:white;
+}
 @-webkit-keyframes bounce {
   0%, 60%, 75%, 90%, 100% {
     -webkit-transform: translateY(0);
