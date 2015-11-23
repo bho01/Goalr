@@ -37,9 +37,10 @@
   </header>
 <div id = "full">
   <!--Solve Now!-->
-
-<div class="container">
   <div class = "font" id = "sub">Here Is Your Progress So Far:</div>
+  <div class = 'container' id = "goalContainer">
+
+<div class="container" id = "s1">
  <div id = 'goalRow' class="row">
   <div class="col-lg-6">
     <div class="input-group">
@@ -50,22 +51,29 @@
     </div>
   </form>
       <span class="input-group-btn">
-
       </span>
     </div>
   </div>
 </div>
 <input class="mdl-slider mdl-js-slider" type="range"
-  min="0" max="100" value="0" tabindex="0"
+  min="0" max="100" value="0" tabindex="0">
   </div>
+</div>
+  <div class = "container">
   <button id = "add" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
   + Add
 </button>
-  </div>
+</div?
 </div>
 <script>
-  document.getElementById("add").onclick = 
-
+  $( document ).ready(function() {
+    var addButt = document.getElementById("add");
+    addButt.onclick = function(){
+      console.log("buttonPressed");
+      console.log($("#s1"));
+      $("#goalContainer").append($("#s1").clone());
+    }
+  });
 
 </script>
   </body>
