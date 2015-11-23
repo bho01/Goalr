@@ -1,6 +1,7 @@
 #hundred{
   background-color: #292D31;
 }
+
 @font-face{
   font-family: 'Pier';
   src:url(Pier/pier-regular.otf) format('opentype');
@@ -102,6 +103,9 @@ a{
 }
 #glr{
   color:white;
+}
+#demo-menu-lower-right{
+  color: white;
 }
 @-webkit-keyframes bounce {
   0%, 60%, 75%, 90%, 100% {
