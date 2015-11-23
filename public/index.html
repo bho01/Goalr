@@ -52,6 +52,12 @@
       <input id = "textInput" class="mdl-textfield__input" type="text" id="sample3" style = "visibility: visible; width: 105px;">
       <label id ="glr" class="mdl-textfield__label" for="sample3">Your Goal</label>
     </div>
+    <div id="p1" class="mdl-progress mdl-js-progress"></div>
+<script>
+  document.querySelector('#p1').addEventListener('mdl-componentupgraded', function() {
+    this.MaterialProgress.setProgress(44);
+  });
+</script>
   </form>
       <span class="input-group-btn">
       </span>
@@ -73,7 +79,7 @@
       console.log("buttonPressed");
       console.log($("#s1"));
       $("#goalContainer").append($("#s1").clone());
-      /* creating DOM elements dynamically you need to register new elements using the upgradeElement function. Here is how you can dynamically create the same raised button with ripples shown in the section above:
+     
 
 	<div id="container"/>
 	<script>
@@ -87,14 +93,6 @@
   });
 
 </script>
-<script>
-	$('head style[type="text/css"]').attr('type', 'text/less');
-less.refreshStyles();
-window.randomize = function() {
-	$('.radial-progress').attr('data-progress', Math.floor(Math.random() * 100));
-}
-setTimeout(window.randomize, 200);
-$('.radial-progress').click(window.randomize);	
-</script>
+
   </body>
 </html>
