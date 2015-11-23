@@ -58,8 +58,12 @@
     </div>
   </div>
 </div>
-<input class="mdl-slider mdl-js-slider" type="range"
-  min="0" max="100" value="0" tabindex="0">
+<div id="p1" class="mdl-progress mdl-js-progress"></div>
+<script>
+  document.querySelector('#p1').addEventListener('mdl-componentupgraded', function() {
+    this.MaterialProgress.setProgress(44);
+  });
+</script>
   </div>
 </div>
   <div class = "container" id = "paddingbtn">
