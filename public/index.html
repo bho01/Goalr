@@ -88,10 +88,8 @@
     var rmbtn = document.getElementById("delete");
     rmbtn.onclick = function(){
       console.log("removeButtonpressed");
-      $("#goalContainer").remove(snow);
-      componentHandler.remove($('.mdl-textfield').get());
-      componentHandler.remove($('.mdl-button').get());
-      componentHandler.remove($('.mdl-slider').get());
+      $("#goalContainer").remove();
+      
     }
   });
 </script>
