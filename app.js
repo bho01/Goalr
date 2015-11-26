@@ -8,11 +8,14 @@ app.use(express.static('public'));
 var url = 'mongodb://localhost:27017/test';
 var mongoose = require('mongoose');
 app.set('views', __dirname + '/views');
+app.set('view engine', 'jade');
+app.set('view options', { layout: false });
 app.use(require('morgan')('combined'));
 app.use(require('cookie-parser')());
 app.use(require('body-parser').urlencoded({ extended: true }));
 app.use(require('express-session')({ secret: 'keyboard cat', resave: true, saveUninitialized: true }));
-
+app.use(passport.initialize());
+app.use(passport.session());
 var User = require('./models/user');
 passport.use(new LocalStrategy(User.authenticate()));
 passport.serializeUser(User.serializeUser());

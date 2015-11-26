@@ -1,0 +1,74 @@
+html
+  head
+    title Goalr
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    meta(name='about', content='')
+    link(rel='stylesheet', href='style.css')
+    link(href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300', rel='stylesheet', type='text/css')
+    link(rel='stylesheet', href='https://storage.googleapis.com/code.getmdl.io/1.0.6/material.indigo-pink.min.css')
+    script(src='https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js')
+    link(rel='stylesheet', href='https://fonts.googleapis.com/icon?family=Material+Icons')
+    link(rel='stylesheet', href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js')
+    script(src='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js')
+    link(href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300', rel='stylesheet', type='text/css')
+    meta(name='theme-color', content='#132330')
+  body#hundred
+    nav.navbar.navbar-inverse.navbar-fixed-top
+      .container
+        .navbar-header
+          if(!user)
+            a#fail.navbar-brand(href='http://brendonho01.github.io/') GOALR
+          else
+            h3 #{user.firstName} #{user.lastName}
+          
+    header#gr
+      .text-vertical-center
+        h1 G O A L R
+      #scrolldown
+        span.glyphicon.glyphicon-chevron-down(aria-hidden='true')
+    #full
+      // Solve Now!
+      #sub.font Here Is Your Progress So Far:
+      #goalContainer.container
+        #s1.container
+          button#delete.mdl-button.mdl-js-button.mdl-js-ripple-effect
+            | REMOVE
+          #goalRow.row
+            .col-lg-6
+              .input-group
+                form(action='#')
+                  .mdl-textfield.mdl-js-textfield.mdl-textfield--floating-label.mdl-textfield--colored
+                    input#textInput.mdl-textfield__input(type='text', style='visibility: visible; width: 105px;')
+                    label#glr.mdl-textfield__label(for='sample3') Your Goal
+                span.input-group-btn
+      #paddingbtn.container
+        button#add.mdl-button.mdl-js-button.mdl-button--raised.mdl-js-ripple-effect
+          | + ADD
+    footer
+      #cent.col-lg-6
+        a#regg.btn(href='/register') register
+    script.
+      $( document ).ready(function() {
+      var addButt = document.getElementById("add");
+      addButt.onclick = function(){
+      console.log("buttonPressed");
+      console.log($("#s1"));
+      var snow = '<div class="container" id = "s1"> <button id = "delete" class="mdl-button mdl-js-button mdl-js-ripple-effect">REMOVE</button><div id = "goalRow" class="row"><div class="col-lg-6"><div class="input-group"><form action="#"><div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-textfield--colored"><input id = "textInput" class="mdl-textfield__input" type="text" id="sample3" style = "visibility: visible; width: 105px;"><label id ="glr" class="mdl-textfield__label" for="sample3">Your Goal</label></div></form><span class="input-group-btn"></span></div></div></div><input class="mdl-slider mdl-js-slider" type="range"min="0" max="100" value="0" tabindex="0"></div>'
+      $("#goalContainer").append(snow);
+      componentHandler.upgradeElements($('.mdl-textfield').get());
+      componentHandler.upgradeElements($('.mdl-button').get());
+      componentHandler.upgradeElements($('.mdl-slider').get());
+      }
+      });
+    script.
+      $(document).ready(function(){
+      var rmbtn = document.getElementById("delete");
+      rmbtn.onclick = function(){
+      console.log("removeButtonpressed");
+      console.log($("#s1"))
+      $("#goalContainer").remove("#goalContainer");
+      }
+      });

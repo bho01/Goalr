@@ -3,6 +3,7 @@ var mongoose = require('mongoose'),
 	passportLocalMongoose = require('passport-local-mongoose');
 
 var User = new Schema({
+	username : String,
 	firstName : String,
 	lastName : String,
 	password: String,

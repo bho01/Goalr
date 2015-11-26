@@ -116,6 +116,21 @@ a{
 #demo-menu-lower-right{
   color: white;
 }
+footer{
+  background:black;
+}
+#cent{
+  text-align: center;
+  padding: 15px;
+}
+#regg{
+  background: white;
+  color:black;
+}
+#regg:hover{
+  color:white;
+  background-color: black;
+}
 @-webkit-keyframes bounce {
   0%, 60%, 75%, 90%, 100% {
     -webkit-transform: translateY(0);

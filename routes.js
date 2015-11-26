@@ -2,8 +2,16 @@ var passport = require('passport');
 var User = require('./models/user');
 
 module.exports = function(app){
+	console.log('in routes');
 	app.get("/", function (req,res){
-  		res.sendFile("index.html");
+		console.log(req);
+		if(!req.user){
+			console.log('needs login');
+			res.redirect('/login');
+		}else{
+			console.log('user in');
+			res.render('index',{user : req.user});
+	  	}
 	});
 	app.get('/register', function(req, res){
 		res.render('register',{});
@@ -24,7 +32,8 @@ module.exports = function(app){
       res.render('login', { user : req.user });
   	});
 	app.post('/login', passport.authenticate('local'), function(req, res) {
-      res.redirect('/profile');
+		console.log(req.user + 'good');
+      res.render('index',{user:req.user});
  	});
  	app.get('/logout', function(req, res) {
       req.logout();
