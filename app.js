@@ -25,9 +25,7 @@ db.once('open', function (callback) {
 	console.log('connection success');
 });
 
-app.get("/", function (req,res){
-  res.sendFile("index.html");
-});
+require('./routes')(app);
 
 var server = app.listen( process.env.PORT||3000, function() {
   var host = server.address().address;
