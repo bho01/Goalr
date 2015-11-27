@@ -27,14 +27,7 @@ header{
   padding-bottom: 50px;
 }
 #full{
-  position:relative;
-  width:100%;
-  height:100%;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-
+  background: inherit;
 }
 #gr{
   display:table;
