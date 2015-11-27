@@ -1,10 +1,32 @@
 {
+<<<<<<< HEAD
   "name":"goalr",
   "version" : "0.0.0",
   "main" : "app.js",
   "private" : true,
   "scripts": {
     "start": "node ./bin/www"
+=======
+  "name": "goalr",
+  "version": "0.0.1",
+  "description": "Goalr",
+  "main": "app.js",
+  "engines": {
+    "node": "5.0.0"
+  },
+    "scripts": {
+    "test": "echo && exit 1"
+  },
+
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ClevererMango27/Goalr.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ClevererMango27/Goalr/issues"
+>>>>>>> 00389327ec87f6be902e5bbe78dbc80d4e3d27ac
   },
   "dependencies": {
     "body-parser": "~1.13.2",
