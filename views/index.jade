@@ -65,9 +65,13 @@ html
       }
       var removeButton = document.getElementsByClassName('mdl-button mdl-js-button mdl-js-ripple-effect');
       for (button in removeButton){
-      button.onclick = function(){
+      if(removeButton[button].id == "add"){
+
+      }else{
+      removeButton[button].onclick = function(){
       console.log('removePressed');
       button.parentNode.remove();
+      }
       }
       }
 
