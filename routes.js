@@ -23,7 +23,7 @@ module.exports = function(app){
           }
 
           passport.authenticate('local')(req, res, function () {
-            res.redirect('/profile');
+            res.redirect('/');
           });
       });
 
