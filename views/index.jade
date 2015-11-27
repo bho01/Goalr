@@ -64,20 +64,14 @@ html
       componentHandler.upgradeElements($('.mdl-slider').get());
       }
       var removeButton = document.getElementsByClassName('mdl-button mdl-js-button mdl-js-ripple-effect');
-      /*for (button in removeButton){
-      if(removeButton[button].id == "add"){
-
-      }else{
-      removeButton[button].onclick = function(){
-      console.log('removePressed');
-      button.parentNode.remove();
+      for (button in removeButton){
+        console.log(removeButton[button]);
+        removeButton[button].onclick = function(){
+          console.log(removeP);
+          removeButton[button].parentNode.remove();
+        }
       }
-      }
-      }*/
-      removeButton[0].onclick = function(){
-        console.log('first clicked');
-        removeButton[0].parentNode.remove();
-      }
+      
 
 
       });
