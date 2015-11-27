@@ -39,5 +39,8 @@ module.exports = function(app){
       req.logout();
       res.redirect('/');
   	});
+  	app.get('/ind', function(req,res){
+  		res.render('index',{});
+  	});
 
 }
