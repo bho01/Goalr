@@ -20,7 +20,7 @@ passport.use(new LocalStrategy(User.authenticate()));
 passport.serializeUser(User.serializeUser());
 passport.deserializeUser(User.deserializeUser());
 
-mongoose.connect('mongodb://<dbuser>:<dbpassword>@ds057944.mongolab.com:57944/goalr');
+mongoose.connect('mongodb://icu:madeonearth@ds057944.mongolab.com:57944/goalr');
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
 db.once('open', function (callback) {
