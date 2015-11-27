@@ -52,7 +52,7 @@ html
       #cent.col-lg-6
         a#regg.btn(href='/register') register
     script.
-      $( document ).ready(function() {
+      $(document).ready(function() {
       var addButt = document.getElementById("add");
       addButt.onclick = function(){
       console.log("buttonPressed");
@@ -63,13 +63,14 @@ html
       componentHandler.upgradeElements($('.mdl-button').get());
       componentHandler.upgradeElements($('.mdl-slider').get());
       }
-      });
-    script.
-      $(document).ready(function(){
-      var rmbtn = document.getElementById("delete");
-      rmbtn.onclick = function(){
-      console.log("removeButtonpressed");
-      console.log($("#s1"))
-      $("#goalContainer").remove("#goalContainer");
+      var removeButton = document.getElementsByClassName('mdl-button mdl-js-button mdl-js-ripple-effect');
+      for (button in removeButton){
+      button.onclick = function(){
+      console.log('removePressed');
+      button.parentNode.remove();
       }
+      }
+
+
       });
+   
