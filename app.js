@@ -5,7 +5,6 @@ var passport = require('passport');
 var LocalStrategy = require('passport-local').Strategy
 var app = express();
 app.use(express.static('public'));
-var url = 'mongodb://localhost:27017/test';
 var mongoose = require('mongoose');
 app.set('views', __dirname + '/views');
 app.set('view engine', 'jade');
@@ -21,7 +20,7 @@ passport.use(new LocalStrategy(User.authenticate()));
 passport.serializeUser(User.serializeUser());
 passport.deserializeUser(User.deserializeUser());
 
-mongoose.connect('mongodb://localhost/test');
+mongoose.connect('mongodb://<dbuser>:<dbpassword>@ds057944.mongolab.com:57944/goalr');
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
 db.once('open', function (callback) {
