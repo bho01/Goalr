@@ -4,21 +4,24 @@ html(lang = 'en')
 		title Goalr Login
 		meta(name='viewport', content='width=device-width, initial-scale=1.0')
 		link(rel='stylesheet', href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css')
-		link(rel='stylesheet', href='style.css')
+		link(rel='stylesheet', href='login.css')
 		script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js')
 		script(src='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js')
 	body
 		.container
-			h1 login to goalr
-			br
-			form(role='form', action='/login',method='post',style='max-width:300px;')
-				.form-group
-					input.form-control(type='text', name='username', placeholder ='Enter Username')
-				.form-group
-					input.form-control(type='password', name='password', placeholder='password')
-				button.btn.btn-default(type='button') Cancel
-				&nbsp;
-				a(href='/')
-					button.btn.btn-primary(type='submit') Login
-				&nbsp;
-				a#regg.btn(href='/register') register
+			.text-vertical-center
+				h1 login to goalr
+				br
+				.col-md-4
+				.col-md-4
+					form(role='form', action='/login',method='post')
+						.form-group
+							input.form-control(type='text', name='username', placeholder ='Enter Username')
+						.form-group
+							input.form-control(type='password', name='password', placeholder='password')
+						button.btn.btn-default(type='button') Cancel
+						&nbsp;
+						a(href='/')
+							button.btn.btn-primary(type='submit') Login
+						&nbsp;
+						a#regg.btn(href='/register') register
