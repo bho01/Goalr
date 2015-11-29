@@ -4,10 +4,14 @@ var User = require('./models/user');
 module.exports = function(app){
 	console.log('in routes');
 	app.get("/", function (req,res){
-		console.log(req);
 		if(!req.user){
 			console.log('needs login');
 			res.redirect('/login');
+			/*User.findOneAndUpdate({username : 'ichauster'}, 
+				{$set:{username:'iChauster'}},
+				function (err, numberAffected, raw){
+					res.render('index',{user : req.user});
+				}); */
 		}else{
 			console.log('user in');
 			res.render('index',{user : req.user});
@@ -21,7 +25,6 @@ module.exports = function(app){
           if (err) {
             return res.render("register", {info: "Sorry. That username already exists. Try again."});
           }
-
           passport.authenticate('local')(req, res, function () {
             res.redirect('/');
           });
@@ -32,7 +35,6 @@ module.exports = function(app){
       res.render('login', { user : req.user });
   	});
 	app.post('/login', passport.authenticate('local'), function(req, res) {
-		console.log(req.user + 'good');
 		res.redirect('/')
  	});
  	app.get('/logout', function(req, res) {
