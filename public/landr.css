@@ -11,6 +11,7 @@ html,body{
  	-moz-background-size: cover;
  	background-size: cover;
  	-o-background-size: cover;
+        background-color: red:
 }
 .text-vertical-center{
 	display: table-cell;
