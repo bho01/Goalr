@@ -5,7 +5,7 @@ var mongoose = require('mongoose'),
 var Goal = new Schema({
 	goal : {goalName : String,
 			subGoals : {goalName : String, 
-						complete : Bool}},
+						complete : Boolean}},
 	due : Date
 });
 var User = new Schema({
