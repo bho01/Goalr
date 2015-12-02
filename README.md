@@ -10,7 +10,9 @@ Inspired by a speech about proper goal setting, Brendon Ho strived to create in 
 
 ###Code Docs
 Goalr is a web (and eventually mobile?) platform. 
+
 NodeJS and Express power our backend.
+
 Jade, CSS, jQuery, Bootstrap, and Material are used in our frontend to dynamically create pages for the user.
 
 
