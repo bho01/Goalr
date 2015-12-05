@@ -4,6 +4,8 @@ var path = require("path");
 var passport = require('passport');
 var LocalStrategy = require('passport-local').Strategy
 var app = express();
+var http = require('http').Server(app);
+var io = require('socket.io')(http);
 app.use(express.static('public'));
 var mongoose = require('mongoose');
 app.set('views', __dirname + '/views');
@@ -28,10 +30,12 @@ db.once('open', function (callback) {
 });
 
 require('./routes')(app);
+io.on('connection', function(socket){
+  console.log('a user connected');
+});
+http.listen(process.env.PORT || 3000, function(){
+	var host = http.address().address;
+ 	var port = http.address().port;
 
-var server = app.listen( process.env.PORT||3000, function() {
-  var host = server.address().address;
-  var port = server.address().port;
-
-  console.log('Example app listening at http://%s:%s', host, port);
+  	console.log('Example app listening at http://%s:%s', host, port);
 });

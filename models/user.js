@@ -2,12 +2,7 @@ var mongoose = require('mongoose'),
 	Schema = mongoose.Schema,
 	passportLocalMongoose = require('passport-local-mongoose');
 
-var Goal = new Schema({
-	goal : {goalName : String,
-			subGoals : {goalName : String, 
-						complete : Boolean}},
-	due : Date
-});
+var Goal = require('./goal');
 var User = new Schema({
 	username : String,
 	firstName : String,

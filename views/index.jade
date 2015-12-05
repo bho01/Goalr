@@ -52,6 +52,9 @@ html
     footer
       #cent.col-lg-6
         a#regg.btn(href='/register') register
+    script(src='https://cdn.socket.io/socket.io-1.2.0.js')
+    script.
+      var socket = io();
     script.
       $(document).ready(function() {
       var addButt = document.getElementById("add");
