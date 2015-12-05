@@ -54,31 +54,39 @@ html
         a#regg.btn(href='/register') register
     script(src='https://cdn.socket.io/socket.io-1.2.0.js')
     script.
-      var socket = io();
-    script.
       $(document).ready(function() {
+      var socket = io();
+      var user = '#{user.username}'
       var addButt = document.getElementById("add");
       addButt.onclick = function(){
       console.log("buttonPressed");
       console.log($("#s1"));
-      var snow = '<div class="container" id = "s1"><button id ="save" class = "mdl-button mdl-js-button mdl-js-ripple-effect" name = "save">SAVE</button><button id = "delete" class="mdl-button mdl-js-button mdl-js-ripple-effect remove" name = "remove">REMOVE</button><div id = "goalRow" class="row"><div class="col-lg-6"><div class="input-group"><form action="#"><div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-textfield--colored"><input id = "textInput" class="mdl-textfield__input" type="text" id="sample3" style = "visibility: visible; width: 105px;"><label id ="glr" class="mdl-textfield__label" for="sample3">Your Goal</label></div></form><span class="input-group-btn"></span></div></div></div><input class="mdl-slider mdl-js-slider" type="range"min="0" max="100" value="0" tabindex="0"></div>'
+      var snow = '<div class="container" id = "s1"><button id ="save" class = "mdl-button mdl-js-button mdl-js-ripple-effect save" name = "save">SAVE</button><button id = "delete" class="mdl-button mdl-js-button mdl-js-ripple-effect remove" name = "remove">REMOVE</button><div id = "goalRow" class="row"><div class="col-lg-6"><div class="input-group"><form action="#"><div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-textfield--colored"><input id = "textInput" class="mdl-textfield__input" type="text" id="sample3" style = "visibility: visible; width: 105px;"><label id ="glr" class="mdl-textfield__label" for="sample3">Your Goal</label></div></form><span class="input-group-btn"></span></div></div></div><input class="mdl-slider mdl-js-slider" type="range"min="0" max="100" value="0" tabindex="0"></div>'
       $("#goalContainer").append(snow);
       componentHandler.upgradeElements($('.mdl-textfield').get());
       componentHandler.upgradeElements($('.mdl-button').get());
       componentHandler.upgradeElements($('mdl-button.mdl-js-button.mdl-js-ripple-effect.remove').get());
       componentHandler.upgradeElements($('.mdl-slider').get());
       getRemove();
+      getSave();
       }
       
       function getRemove(){
       var text = $(".mdl-button.mdl-js-button.mdl-js-ripple-effect.remove");
-      console.log(text);
-      console.log($(event.target));
       text.click(function(event){
       $(event.target.parentNode.parentNode).remove();
       });
       }
       getRemove();
+      function getSave(){
+      var save = $('.mdl-button.mdl-js-button.mdl-js-ripple-effect.save');
+      save.click(function(event){
+      var goalName = event.target.parentNode.parentNode.childNodes[2].childNodes[0].childNodes[0].childNodes[0].childNodes[0].childNodes[0].value;
+      socket.emit('goal saved', goalName, user);
+      $(event.target.parentNode).remove();
+      });
+      }
+      getSave();
 
       
       });

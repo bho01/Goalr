@@ -2,8 +2,8 @@ var mongoose = require('mongoose'),
 	Schema = mongoose.Schema;
 
 var Goal = new Schema({
-	goal : {goalName : String,
-			subGoals : {goalName : String, 
+	goal : {goalr : String,
+			subGoals : {goals : String, 
 						complete : Boolean}},
 	due : Date
 });
