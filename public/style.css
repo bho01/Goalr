@@ -23,6 +23,12 @@ header{
   padding-bottom: 25px;
   padding-right: 25px;
 }
+#save{
+  float: right;
+  padding-bottom: 25px;
+  padding-right: 15px;
+  color: #fff;
+}
 #navvy{
   color:white;
   padding-left: 10px;
