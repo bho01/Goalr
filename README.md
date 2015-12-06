@@ -1,5 +1,5 @@
 #Goalr
-Sometimes, your hopes go down and you feel like shooting yourself because youve been working on something that was about to me made. Well Goalr is the answer. Because thats the app that screwed my life around. And this repo will be deleted
+Sometimes, your hopes go down and you feel like shooting yourself because youve been working on something that was made already. Well Goalr is the answer. Because thats the app that screwed my life around. And this repo will be deleted
 
 ###Contributors
 * [Brendon Ho](https://github.com/brendonho01) - Creator/Developer
