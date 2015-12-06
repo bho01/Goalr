@@ -14,10 +14,15 @@ module.exports = function(app){
 				}); */
 		}else{
 			console.log('user in');
-			User.find({username : req.user.username}, function(err,obj){
-				console.log(obj);
+			User.find({username : req.user.username}).lean().exec(function (err, docs){
+				if (err){
+					console.log(err);
+				}
+				var js = JSON.stringify(docs);
+				console.log(js);
+				res.render('index',{user : req.user, docs : js});
+
 			});
-			res.render('index',{user : req.user});
 	  	}
 	});
 	app.get('/register', function(req, res){

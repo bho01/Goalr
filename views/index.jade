@@ -57,6 +57,11 @@ html
       $(document).ready(function() {
       var socket = io();
       var user = '#{user.username}';
+      var client = '!{docs}';
+      client = client.replace(/_/g,"");
+      var json = $.parseJSON('[' + client + ']');
+      var goals = json[0][0].goalName;
+      console.log(goals);
       var addButt = document.getElementById("add");
       addButt.onclick = function(){
       console.log("buttonPressed");
