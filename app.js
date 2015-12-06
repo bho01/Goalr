@@ -33,14 +33,24 @@ db.once('open', function (callback) {
 require('./routes')(app);
 io.on('connection', function(socket){
   console.log('a user connected');
-  socket.on('goal saved', function(gl,username){
+  socket.on('goal saved', function(gl,usame){
   	console.log(gl);
-  	var goal = new Goal({goal :{goalr : gl}})
-  	User.update({username : username}, {$push: {goalName : gl}},
-  					{multi:true}
-  	).exec();
+  	User.findOneAndUpdate({username : usame}, 
+				{$push:{goalName:{goal:gl}}},
+				function (err, numberAffected, raw){
+					if(err){
+						console.log(err);
+					}
+					console.log(numberAffected);
+				});
   });
 });
+/*var Goal = new Schema({
+	goal : {goalr : String,
+			subGoals : {goals : String, 
+						complete : Boolean}},
+	due : Date
+});*/
 
 http.listen(process.env.PORT || 3000, function(){
 	var host = http.address().address;

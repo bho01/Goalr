@@ -14,6 +14,9 @@ module.exports = function(app){
 				}); */
 		}else{
 			console.log('user in');
+			User.find({username : req.user.username}, function(err,obj){
+				console.log(obj);
+			});
 			res.render('index',{user : req.user});
 	  	}
 	});
@@ -21,8 +24,9 @@ module.exports = function(app){
 		res.render('register',{});
 	})
 	app.post('/register', function(req, res) {
-      User.register(new User({ username : req.body.username, firstName : req.body.firstName, lastName : req.body.lastName, email : req.body.email }), req.body.password, function(err, account) {
+      User.register(new User({ username : req.body.username, firstName : req.body.firstName, lastName : req.body.lastName, email : req.body.email, goalName : [{goal : "coder"}]}), req.body.password, function(err, account) {
           if (err) {
+          	console.log(err);
             return res.render("register", {info: "Sorry. That username already exists. Try again."});
           }
           passport.authenticate('local')(req, res, function () {

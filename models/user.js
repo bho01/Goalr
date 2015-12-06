@@ -9,10 +9,12 @@ var User = new Schema({
 	lastName : String,
 	password: String,
 	email : String,
-	goalName : [Goal]
+	goalName : [{goal: String}]
 });
 
 
 User.plugin(passportLocalMongoose);
 
+module.exports = mongoose.model('Goal', Goal);
 module.exports = mongoose.model('User', User);
+

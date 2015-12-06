@@ -1,10 +1,11 @@
 var mongoose = require('mongoose'),
 	Schema = mongoose.Schema;
 
+console.log('inside goal')
 var Goal = new Schema({
-	goal : {goalr : String,
-			subGoals : {goals : String, 
-						complete : Boolean}},
+	goal : String,
+	subGoals : {goals : String, 
+				complete : Boolean},
 	due : Date
 });
 
