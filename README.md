@@ -2,9 +2,9 @@
 Sometimes, your hopes go down and you feel like shooting yourself because youve been working on something that was made already. Well Goalr is the answer. Because thats the app that screwed my life around. And this repo will be deleted
 
 ###Contributors 
-* [Brendon Ho](https://github.com/brendonho01) - Creator/Developer/Depressed
+* [Brendon Ho](https://github.com/brendonho01) - Creator/Developer/
 
-* [Ivan Chau](https://github.com/ichauster) - Developer/"This Project Sucks"
+* [Ivan Chau](https://github.com/ichauster) - Main Developer/
 
 ###Code Docs
 Goalr is a web (and eventually mobile?) platform. 
