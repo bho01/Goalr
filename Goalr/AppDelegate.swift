@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  Goalr
 //
-//  Created by Brendon Duan Ho on 12/14/15.
+//  Created by Brendon Ho on 12/14/15.
 //  Copyright © 2015 SwiftlyDoIt. All rights reserved.
 //
 
