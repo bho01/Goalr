@@ -29,7 +29,7 @@ module.exports = function(app){
 		res.render('register',{});
 	})
 	app.post('/register', function(req, res) {
-      User.register(new User({ username : req.body.username, firstName : req.body.firstName, lastName : req.body.lastName, email : req.body.email, goalName : [{goal : "coder"}]}), req.body.password, function(err, account) {
+      User.register(new User({ username : req.body.username, firstName : req.body.firstName, lastName : req.body.lastName, email : req.body.email, goalName : [{goal : "coder", subgoals : {goal : ['code once a day', false]}, dateDue:Date()}]}), req.body.password, function(err, account) {
           if (err) {
           	console.log(err);
             return res.render("register", {info: "Sorry. That username already exists. Try again."});
