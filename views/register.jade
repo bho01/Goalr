@@ -1,0 +1,34 @@
+doctype html
+html(lang='en')
+	head
+		title Register for Goalr
+		meta(name='viewport', content='width=device-width, initial-scale=1.0')
+		link(rel='stylesheet', href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css')
+		script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js')
+		script(src='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js')
+		link(rel='stylesheet', href='landr.css')
+	body
+	.container
+		.text-vertical-center
+			h1 register for goalr
+			br
+			.col-md-4
+			.col-md-4
+				form(role='form', action='/register', method='post', style='max-width: 300px;')
+					.form-group
+						input.form-control(type='text', name='username', placeholder='Username')
+					.form-group
+						input.form-control(type='text', name='firstName', placeholder='First Name')
+					.form-group
+						input.form-control(type='text', name='lastName', placeholder='Last Name')
+					.form-group
+						input.form-control(type='text', name='email', placeholder='Email Address')
+					.form-group
+						input.form-control(type='password', name='password', placeholder='Password')
+					button.btn.btn-default(type='sumbit') Submit 
+					&nbsp;
+					a(href='/')
+						button.btn.btn-primary(type='button') Cancel
+					br
+					h4= info
+
