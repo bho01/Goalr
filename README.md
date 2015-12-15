@@ -13,6 +13,5 @@ NodeJS and Express power our backend.
 
 Jade, CSS, jQuery, Bootstrap, and Material are used in our frontend to dynamically create pages for the user.
 
-iOS app uses Swift and the Android app will use Java
 
 
