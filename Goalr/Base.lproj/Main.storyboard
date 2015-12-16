@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
@@ -18,17 +18,67 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <containerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hqq-4i-NvO">
-                                <rect key="frame" x="-113" y="0.0" width="600" height="175"/>
+                                <rect key="frame" x="-113" y="0.0" width="600" height="181"/>
                                 <color key="backgroundColor" red="0.080333769633507801" green="0.080333769633507801" blue="0.080333769633507801" alpha="1" colorSpace="calibratedRGB"/>
                             </containerView>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HGx-d7-wxq">
+                                <rect key="frame" x="0.0" y="221" width="375" height="94"/>
+                                <connections>
+                                    <segue destination="j4t-2Y-ueQ" kind="embed" id="shb-Q1-LqT"/>
+                                </connections>
+                            </containerView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Your Goal" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eYU-kI-pF7">
+                                <rect key="frame" x="20" y="227" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="sIy-hs-0Wy">
+                                <rect key="frame" x="18" y="265" width="339" height="31"/>
+                            </slider>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wcg-7J-8yy">
+                                <rect key="frame" x="305" y="227" width="55" height="30"/>
+                                <state key="normal" title="Remove"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3qV-6j-9Sz">
+                                <rect key="frame" x="0.0" y="377" width="375" height="30"/>
+                                <state key="normal" title="Add Goal"/>
+                                <connections>
+                                    <action selector="addGoalAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4yQ-wa-O0R"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NNK-L7-yMs">
+                                <rect key="frame" x="112" y="57" width="150" height="77"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.22835542102966833" green="0.22835542102966833" blue="0.22835542102966833" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="addGoal" destination="3qV-6j-9Sz" id="kjm-QF-ieX"/>
+                        <outlet property="container" destination="HGx-d7-wxq" id="kra-xH-r3i"/>
+                        <outlet property="name" destination="NNK-L7-yMs" id="Z3z-Fo-c7w"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="305" y="388"/>
+            <point key="canvasLocation" x="304.5" y="387.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="eTo-SJ-cRh">
+            <objects>
+                <viewController id="j4t-2Y-ueQ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HQn-E0-wF7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="94"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hCM-IW-Dgp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="852.5" y="323"/>
         </scene>
     </scenes>
 </document>
