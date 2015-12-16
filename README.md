@@ -7,7 +7,7 @@ Sometimes, your hopes go down and you feel like shooting yourself because youve 
 * [Ivan Chau](https://github.com/ichauster) - Main Web Developer/Full Time
 
 ###Code Docs
-Goalr is a web (and eventually mobile?) platform. It will soon come to iOS (once we get money), and Android. Not Microsoft or Blackberry platforms.
+Goalr is a web (and eventually mobile?) platform. It will soon come to iOS and Android.
 
 NodeJS and Express power our backend.
 
