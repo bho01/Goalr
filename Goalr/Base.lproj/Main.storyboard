@@ -21,11 +21,9 @@
                                 <rect key="frame" x="-113" y="0.0" width="600" height="181"/>
                                 <color key="backgroundColor" red="0.080333769633507801" green="0.080333769633507801" blue="0.080333769633507801" alpha="1" colorSpace="calibratedRGB"/>
                             </containerView>
-                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HGx-d7-wxq">
+                            <containerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HGx-d7-wxq">
                                 <rect key="frame" x="0.0" y="221" width="375" height="94"/>
-                                <connections>
-                                    <segue destination="j4t-2Y-ueQ" kind="embed" id="shb-Q1-LqT"/>
-                                </connections>
+                                <color key="backgroundColor" red="0.25345543322040864" green="0.25345543322040864" blue="0.25345543322040864" alpha="1" colorSpace="calibratedRGB"/>
                             </containerView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Your Goal" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eYU-kI-pF7">
                                 <rect key="frame" x="20" y="227" width="97" height="30"/>
@@ -49,7 +47,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NNK-L7-yMs">
                                 <rect key="frame" x="112" y="57" width="150" height="77"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.69819617146596857" green="0.69819617146596857" blue="0.69819617146596857" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -65,24 +63,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="304.5" y="387.5"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="eTo-SJ-cRh">
-            <objects>
-                <viewController id="j4t-2Y-ueQ" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="lr1-j4-aH2"/>
-                        <viewControllerLayoutGuide type="bottom" id="jgQ-Mz-CVX"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="HQn-E0-wF7">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="94"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="hCM-IW-Dgp" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="852.5" y="323"/>
         </scene>
     </scenes>
 </document>
