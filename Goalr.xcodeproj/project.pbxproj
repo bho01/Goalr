@@ -34,6 +34,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		367BE27C1C225835001C500E /* pier-bold-italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "pier-bold-italic.otf"; path = "public/Pier/pier-bold-italic.otf"; sourceTree = SOURCE_ROOT; };
+		367BE27D1C225835001C500E /* pier-bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "pier-bold.otf"; path = "public/Pier/pier-bold.otf"; sourceTree = SOURCE_ROOT; };
+		367BE27E1C225835001C500E /* pier-italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "pier-italic.otf"; path = "public/Pier/pier-italic.otf"; sourceTree = SOURCE_ROOT; };
+		367BE27F1C225835001C500E /* pier-regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "pier-regular.otf"; path = "public/Pier/pier-regular.otf"; sourceTree = SOURCE_ROOT; };
 		36F641FA1C1F878E00895449 /* Goalr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Goalr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		36F641FD1C1F878E00895449 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		36F641FF1C1F878E00895449 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -97,10 +101,14 @@
 		36F641FC1C1F878E00895449 /* Goalr */ = {
 			isa = PBXGroup;
 			children = (
+				367BE27C1C225835001C500E /* pier-bold-italic.otf */,
+				367BE27D1C225835001C500E /* pier-bold.otf */,
+				367BE27E1C225835001C500E /* pier-italic.otf */,
+				367BE27F1C225835001C500E /* pier-regular.otf */,
 				36F641FD1C1F878E00895449 /* AppDelegate.swift */,
 				36F641FF1C1F878E00895449 /* ViewController.swift */,
-				36F642011C1F878E00895449 /* Main.storyboard */,
 				36F642041C1F878E00895449 /* Assets.xcassets */,
+				36F642011C1F878E00895449 /* Main.storyboard */,
 				36F6422B1C1F884100895449 /* LaunchScreen.storyboard */,
 				36F642091C1F878E00895449 /* Info.plist */,
 			);
@@ -482,6 +490,7 @@
 				36F642241C1F878E00895449 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		36F642251C1F878E00895449 /* Build configuration list for PBXNativeTarget "GoalrTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +499,7 @@
 				36F642271C1F878E00895449 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		36F642281C1F878E00895449 /* Build configuration list for PBXNativeTarget "GoalrUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +508,7 @@
 				36F6422A1C1F878E00895449 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
