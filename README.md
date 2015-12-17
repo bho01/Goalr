@@ -6,7 +6,7 @@ Sometimes, your hopes go down and you feel like shooting yourself because youve 
 
 * [Ivan Chau](https://github.com/ichauster) - Developer/Web Section
 
-* [Peter...Pending](https://github.com/dzt) - Developer/Android Section
+We need an Android Developer!!!
 
 ###Code Docs
 Goalr is a web (and eventually mobile?) platform. It will soon come to iOS and Android.
