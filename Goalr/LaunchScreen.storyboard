@@ -29,8 +29,8 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="GOALR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GFy-9r-fkd">
-                                <rect key="frame" x="108" y="278" width="159" height="112"/>
-                                <fontDescription key="fontDescription" name="PierSans" family="Pier Sans" pointSize="41"/>
+                                <rect key="frame" x="100" y="270" width="174" height="128"/>
+                                <fontDescription key="fontDescription" name="PierSans" family="Pier Sans" pointSize="45"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -46,7 +46,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="302" y="348"/>
+            <point key="canvasLocation" x="301.5" y="347.5"/>
         </scene>
     </scenes>
 </document>
