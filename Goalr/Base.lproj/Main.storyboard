@@ -22,10 +22,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <containerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hqq-4i-NvO">
-                                <rect key="frame" x="-113" y="0.0" width="600" height="181"/>
-                                <color key="backgroundColor" red="0.080333769633507801" green="0.080333769633507801" blue="0.080333769633507801" alpha="1" colorSpace="calibratedRGB"/>
-                            </containerView>
                             <containerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HGx-d7-wxq">
                                 <rect key="frame" x="0.0" y="221" width="375" height="94"/>
                                 <color key="backgroundColor" red="0.22860677484344527" green="0.22860677484344527" blue="0.22860677484344527" alpha="1" colorSpace="calibratedRGB"/>
@@ -41,10 +37,15 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wcg-7J-8yy">
                                 <rect key="frame" x="305" y="227" width="55" height="30"/>
                                 <state key="normal" title="Remove"/>
+                                <connections>
+                                    <action selector="remove:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7R3-sw-p1y"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3qV-6j-9Sz">
                                 <rect key="frame" x="0.0" y="377" width="375" height="30"/>
-                                <state key="normal" title="Add Goal"/>
+                                <state key="normal" title="Add Goal">
+                                    <color key="titleShadowColor" red="0.2181355707" green="0.2181355707" blue="0.2181355707" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="addGoalAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4yQ-wa-O0R"/>
                                 </connections>
@@ -55,6 +56,10 @@
                                 <color key="textColor" red="0.92351112565445026" green="0.92351112565445026" blue="0.92351112565445026" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <containerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hqq-4i-NvO">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="182"/>
+                                <color key="backgroundColor" red="0.080333769633507801" green="0.080333769633507801" blue="0.080333769633507801" alpha="1" colorSpace="calibratedRGB"/>
+                            </containerView>
                         </subviews>
                         <color key="backgroundColor" red="0.22835542102966833" green="0.22835542102966833" blue="0.22835542102966833" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -63,6 +68,8 @@
                         <outlet property="addGoal" destination="3qV-6j-9Sz" id="kjm-QF-ieX"/>
                         <outlet property="container" destination="HGx-d7-wxq" id="kra-xH-r3i"/>
                         <outlet property="name" destination="NNK-L7-yMs" id="Z3z-Fo-c7w"/>
+                        <outlet property="remove" destination="wcg-7J-8yy" id="6ZW-DU-jG8"/>
+                        <outlet property="slide" destination="sIy-hs-0Wy" id="Kjc-Jl-nES"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
