@@ -47,5 +47,12 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>UIAppFonts</key>
+	<array>
+		<string>pier-bold-italic.otf</string>
+		<string>pier-bold.otf</string>
+		<string>pier-italic.otf</string>
+		<string>pier-regular.otf</string>
+	</array>
 </dict>
 </plist>
