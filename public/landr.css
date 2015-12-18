@@ -12,6 +12,7 @@ html,body{
  	background-size: cover;
  	-o-background-size: cover;
         background-color: red:
+        background-color: black;
 }
 .text-vertical-center{
 	display: table-cell;
