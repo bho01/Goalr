@@ -27,6 +27,11 @@ html,body{
 	background-color:black;
 	border-color:white;	
 }
+#login:hover{
+	color:black;
+	background-color:white;
+	border-color:black;
+}
 #regg{
 	color:white;
 	background-color:black;
