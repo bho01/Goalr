@@ -11,10 +11,27 @@ html,body{
  	-moz-background-size: cover;
  	background-size: cover;
  	-o-background-size: cover;
-        background-color: red:
+      
+        background-color: black;
 }
 .text-vertical-center{
 	display: table-cell;
 	text-align: center;
 	vertical-align: middle;
+
+
+  color: white;
+}
+#login{
+	color:white;
+	background-color:black;
+	border-color:white;	
+}
+#regg{
+	color:white;
+	background-color:black;
+}
+#regg:hover{
+	color:black;
+	background-color:white;
 }
