@@ -18,8 +18,13 @@ class ViewController: UIViewController{
     @IBOutlet weak var add: UIButton!
     @IBOutlet weak var slider: UISlider!
     
-   
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
     
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+    }
  
 
    
