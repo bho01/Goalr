@@ -8,31 +8,23 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController{
+    @IBOutlet weak var remove: UIButton!
+    @IBOutlet weak var bottomContainer: UIView!
 
-    @IBOutlet weak var container: UIView!
-    @IBOutlet weak var addGoal: UIButton!
-    @IBOutlet weak var name: UILabel!
+    @IBOutlet weak var topContain: UIView!
+ 
+    @IBOutlet weak var text: UITextField!
+    @IBOutlet weak var add: UIButton!
+    @IBOutlet weak var slider: UISlider!
     
-    var nameImput = String()
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        
-        nameImput = String()
-        name.text = "\(nameImput)"
-        
-        
-    }
+   
+    
+ 
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    @IBAction func addGoalAction(sender: AnyObject) {
-        
-        
-    }
+   
+
+  
 
 
 }
