@@ -20,4 +20,5 @@ html,body{
 	vertical-align: middle;
 	font-family: 'Pier';
   src:url(Pier/pier-regular.otf) format('opentype');
+  color: white;
 }
