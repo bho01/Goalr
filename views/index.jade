@@ -95,19 +95,20 @@ html
       var json = $.parseJSON('[' + client + ']');
       var goals = json[0][0].goalName;
       var subgoals = goals.subgoals;
-      console.log(subgoals);
       console.log(goals);
       var table = "";
       for (var i = 0; i < goals.length; i++){
       console.log(goals[i].subgoals.length);
       for(var a = 0; a < goals[i].subgoals.length; a ++){
-      console.log(a)
-      console.log(goals[i].subgoals.length);
+      console.log(reason);
       var reason = goals[i].subgoals[a];
+      console.log(reason);
       var stringimp = '<tr><td class="mdl-data-table__cell--non-numeric">'+reason.goal[0]+'</td><td>Tomorrow</td><td>'+reason.goal[1]+'</td></tr>';
       table += stringimp;
       if (a == goals[i].subgoals.length - 1){
       callit();
+      reason = [];
+      table = "";
       }
       }
       function callit(){

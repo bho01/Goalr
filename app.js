@@ -36,7 +36,7 @@ io.on('connection', function(socket){
   socket.on('goal saved', function(gl,usame){
   	console.log(gl);
   	User.findOneAndUpdate({username : usame}, 
-				{$push:{goalName:{goal:gl}}},
+				{$push:{goalName:{goal:gl, subgoals : [{goal : ['no subgoals', false]}], dateDue : Date()}}},
 				function (err, numberAffected, raw){
 					if(err){
 						console.log(err);
