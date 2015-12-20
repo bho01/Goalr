@@ -5,8 +5,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <customFonts key="customFonts">
+        <mutableArray key="pier-bold.otf">
+            <string>PierSans-Bold</string>
+        </mutableArray>
         <mutableArray key="pier-regular.otf">
-            <string>PierSans</string>
             <string>PierSans</string>
             <string>PierSans</string>
         </mutableArray>
@@ -60,6 +62,9 @@
                                 <state key="normal" title="+">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="addTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VDX-dn-Fg7"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.23070735165794065" green="0.23070735165794065" blue="0.23070735165794065" alpha="1" colorSpace="calibratedRGB"/>
@@ -76,7 +81,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="472.5" y="365.5"/>
+            <point key="canvasLocation" x="396.5" y="346.5"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="5Cb-51-GeE">
@@ -92,7 +97,7 @@
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DY5-fd-G78">
                                 <rect key="frame" x="121" y="112" width="132" height="64"/>
-                                <fontDescription key="fontDescription" name="PierSans" family="Pier Sans" pointSize="24"/>
+                                <fontDescription key="fontDescription" name="PierSans-Bold" family="Pier Sans" pointSize="24"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>

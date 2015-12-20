@@ -29,7 +29,7 @@ class ViewController: UIViewController{
  
 
     @IBAction func addTouched(sender: AnyObject) {
-        //For Tommorow
+        //For Tommorow. Add what button does to life
     }
 
   
