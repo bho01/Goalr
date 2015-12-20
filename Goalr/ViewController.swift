@@ -28,7 +28,13 @@ class ViewController: UIViewController{
  
 
    
-
+    func pressed(){
+        if #available(iOS 9.0, *) {
+            add.touchesBegan(<#T##touches: Set<UITouch>##Set<UITouch>#>, withEvent: <#T##UIEvent?#>)
+        } else {
+            // Fallback on earlier versions
+        }
+    }
   
 
 
