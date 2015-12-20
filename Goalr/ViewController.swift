@@ -22,21 +22,18 @@ class ViewController: UIViewController{
         super.viewDidLoad()
     }
     
+   
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
  
 
-   
-    func pressed(){
-        if #available(iOS 9.0, *) {
-            add.touchesBegan(<#T##touches: Set<UITouch>##Set<UITouch>#>, withEvent: <#T##UIEvent?#>)
-        } else {
-            // Fallback on earlier versions
-        }
+    @IBAction func addTouched(sender: AnyObject) {
+        //For Tommorow
     }
+
   
 
 
-}
 
+}
