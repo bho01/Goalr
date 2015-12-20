@@ -100,7 +100,6 @@ html
       for (var i = 0; i < goals.length; i++){
       console.log(goals[i].subgoals.length);
       for(var a = 0; a < goals[i].subgoals.length; a ++){
-      console.log(reason);
       var reason = goals[i].subgoals[a];
       console.log(reason);
       var stringimp = '<tr><td class="mdl-data-table__cell--non-numeric">'+reason.goal[0]+'</td><td>Tomorrow</td><td>'+reason.goal[1]+'</td></tr>';
@@ -113,7 +112,7 @@ html
       }
       function callit(){
       console.log('called' + table);
-      var output = '<div class="container" id = "s1"><button id = "delete" class="mdl-button mdl-js-button mdl-js-ripple-effect remove" name = "remove">REMOVE</button><div id = "goalRow" class="row"><div class="input-group"><form action="#"><div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-textfield--colored"><input id = "textInput" class="mdl-textfield__input" type="text" id="sample3" style = "visibility: visible; width: 105px;"><label id ="glr" class="mdl-textfield__label" for="sample3">'+goals[i].goal+ '</label></div></form><span class="input-group-btn"></span></div><div class = "demo-card-wide mdl-card mdl-shadow--2dp"><div class = "mdl-card__title"><div class = "mdl-card__title-text"> <h2>'+goals[i].dateDue+'</h2></div></div><div class = "mdl-cell mdl-cell--4-col" id = "low"><table id = "low" class = "mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp mdl-cell--4-col"><thead><tr><th class = "mdl-data-table__cell--non-numeric">Sub-Goals</th><th>Date Due</th><th>Complete</th></tr></thead><tbody>'+table+'</tbody></table></div></div></div></div>'
+      var output = '<div class="container" id = "s1" serv = '+'"'+goals[i].id+'"'+'><button id = "delete" class="mdl-button mdl-js-button mdl-js-ripple-effect remove" name = "remove">REMOVE</button><div id = "goalRow" class="row"><div class="input-group"><form action="#"><div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-textfield--colored"><input id = "textInput" class="mdl-textfield__input" type="text" id="sample3" style = "visibility: visible; width: 105px;"><label id ="glr" class="mdl-textfield__label" for="sample3">'+goals[i].goal+ '</label></div></form><span class="input-group-btn"></span></div><div class = "demo-card-wide mdl-card mdl-shadow--2dp"><div class = "mdl-card__title"><div class = "mdl-card__title-text"> <h2>'+goals[i].dateDue+'</h2></div></div><div class = "mdl-cell mdl-cell--4-col" id = "low"><table id = "low" class = "mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp mdl-cell--4-col"><thead><tr><th class = "mdl-data-table__cell--non-numeric">Sub-Goals</th><th>Date Due</th><th>Complete</th></tr></thead><tbody>'+table+'</tbody></table></div></div></div></div>'
       $("#goalContainer").append(output);
       componentHandler.upgradeElements($('.mdl-textfield').get());
       componentHandler.upgradeElements($('.mdl-button').get());
@@ -141,6 +140,10 @@ html
       function getRemove(){
       var text = $(".mdl-button.mdl-js-button.mdl-js-ripple-effect.remove");
       text.click(function(event){
+      console.log(event.target);
+      var goalID = event.target.parentNode.parentNode.getAttribute('serv');
+      console.log(goalID);
+      socket.emit('goal removed', goalID, user);
       $(event.target.parentNode.parentNode).remove();
       });
       }

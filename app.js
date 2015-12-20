@@ -8,6 +8,7 @@ var http = require('http').Server(app);
 var io = require('socket.io')(http);
 app.use(express.static('public'));
 var mongoose = require('mongoose');
+var ObjectId = require('mongodb').ObjectId;
 app.set('views', __dirname + '/views');
 app.set('view engine', 'jade');
 app.set('view options', { layout: false });
@@ -43,6 +44,18 @@ io.on('connection', function(socket){
 					}
 					console.log(numberAffected);
 				});
+  });
+  socket.on('goal removed', function(id, usame){
+  	console.log(id);
+  	User.findOneAndUpdate({username:usame},
+  		{$pull : {goalName:{"_id":ObjectId(id)}}},
+  		function (err, numberAffected, raw){
+  			if (err){
+  				console.log(err);
+  			}
+  			console.log(numberAffected);
+  		});
+
   });
 });
 /*var Goal = new Schema({
