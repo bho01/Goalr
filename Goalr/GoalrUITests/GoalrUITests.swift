@@ -2,7 +2,7 @@
 //  GoalrUITests.swift
 //  GoalrUITests
 //
-//  Created by Brendon Duan Ho on 12/14/15.
+//  Created by Brendon Duan Ho on 12/20/15.
 //  Copyright © 2015 SwiftlyDoIt. All rights reserved.
 //
 

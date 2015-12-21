@@ -30,15 +30,11 @@
 	<array>
 		<string>armv7</string>
 	</array>
-	<key>UIRequiresFullScreen</key>
-	<true/>
-	<key>UIStatusBarHidden</key>
-	<true/>
-	<key>UIStatusBarStyle</key>
-	<string>UIStatusBarStyleLightContent</string>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
@@ -49,10 +45,9 @@
 	</array>
 	<key>UIAppFonts</key>
 	<array>
-		<string>pier-bold-italic.otf</string>
-		<string>pier-bold.otf</string>
-		<string>pier-italic.otf</string>
-		<string>pier-regular.otf</string>
+		<string></string>
 	</array>
+	<key>pier-regular.otf</key>
+	<string></string>
 </dict>
 </plist>
