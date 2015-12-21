@@ -4,10 +4,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--PageView-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Goalr" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="PageView" id="BYZ-38-t0r" customClass="ViewController" customModule="Goalr" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -21,7 +21,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-17" y="572"/>
+            <point key="canvasLocation" x="198.5" y="479.5"/>
         </scene>
         <!--Page View Controller-->
         <scene sceneID="c0v-bq-BxX">
@@ -41,7 +41,7 @@
                         <viewControllerLayoutGuide type="top" id="2fH-w1-qAA"/>
                         <viewControllerLayoutGuide type="bottom" id="MPU-b1-58b"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="aU2-e7-p5o">
+                    <view key="view" contentMode="scaleToFill" id="aU2-e7-p5o" customClass="PageItemController">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
