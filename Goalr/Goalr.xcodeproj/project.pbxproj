@@ -7,14 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3632DBBF1C27A96C00101501 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3632DBBE1C27A96C00101501 /* LaunchScreen.storyboard */; };
 		368ABDED1C279B7000B2EA05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368ABDEC1C279B7000B2EA05 /* AppDelegate.swift */; };
 		368ABDEF1C279B7000B2EA05 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368ABDEE1C279B7000B2EA05 /* ViewController.swift */; };
 		368ABDF21C279B7000B2EA05 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 368ABDF01C279B7000B2EA05 /* Main.storyboard */; };
 		368ABDF41C279B7000B2EA05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 368ABDF31C279B7000B2EA05 /* Assets.xcassets */; };
 		368ABE021C279B7000B2EA05 /* GoalrTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368ABE011C279B7000B2EA05 /* GoalrTests.swift */; };
 		368ABE0D1C279B7000B2EA05 /* GoalrUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368ABE0C1C279B7000B2EA05 /* GoalrUITests.swift */; };
-		368ABE1B1C279B9900B2EA05 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 368ABE1A1C279B9900B2EA05 /* LaunchScreen.storyboard */; };
 		368ABE221C27A57500B2EA05 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368ABE211C27A57500B2EA05 /* File.swift */; };
+		36CB443A1C28A716001D21A6 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 36CB44391C28A716001D21A6 /* Icon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3632DBBE1C27A96C00101501 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		368ABDE91C279B7000B2EA05 /* Goalr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Goalr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		368ABDEC1C279B7000B2EA05 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		368ABDEE1C279B7000B2EA05 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,12 +49,12 @@
 		368ABE081C279B7000B2EA05 /* GoalrUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoalrUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		368ABE0C1C279B7000B2EA05 /* GoalrUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalrUITests.swift; sourceTree = "<group>"; };
 		368ABE0E1C279B7000B2EA05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		368ABE1A1C279B9900B2EA05 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		368ABE1D1C279BB800B2EA05 /* pier-bold-italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "pier-bold-italic.otf"; path = "../../public/Pier/pier-bold-italic.otf"; sourceTree = "<group>"; };
 		368ABE1E1C279BB800B2EA05 /* pier-bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "pier-bold.otf"; path = "../../public/Pier/pier-bold.otf"; sourceTree = "<group>"; };
 		368ABE1F1C279BB800B2EA05 /* pier-italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "pier-italic.otf"; path = "../../public/Pier/pier-italic.otf"; sourceTree = "<group>"; };
 		368ABE201C279BB800B2EA05 /* pier-regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "pier-regular.otf"; path = "../../public/Pier/pier-regular.otf"; sourceTree = "<group>"; };
 		368ABE211C27A57500B2EA05 /* File.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		36CB44391C28A716001D21A6 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = ../../../../Icon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,7 +110,7 @@
 				368ABDEE1C279B7000B2EA05 /* ViewController.swift */,
 				368ABE211C27A57500B2EA05 /* File.swift */,
 				368ABDF01C279B7000B2EA05 /* Main.storyboard */,
-				368ABE1A1C279B9900B2EA05 /* LaunchScreen.storyboard */,
+				3632DBBE1C27A96C00101501 /* LaunchScreen.storyboard */,
 				368ABDF31C279B7000B2EA05 /* Assets.xcassets */,
 				368ABDF81C279B7000B2EA05 /* Info.plist */,
 			);
@@ -136,6 +138,7 @@
 		368ABE1C1C279BAC00B2EA05 /* Pier */ = {
 			isa = PBXGroup;
 			children = (
+				36CB44391C28A716001D21A6 /* Icon.png */,
 				368ABE1D1C279BB800B2EA05 /* pier-bold-italic.otf */,
 				368ABE1E1C279BB800B2EA05 /* pier-bold.otf */,
 				368ABE1F1C279BB800B2EA05 /* pier-italic.otf */,
@@ -248,7 +251,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				368ABE1B1C279B9900B2EA05 /* LaunchScreen.storyboard in Resources */,
+				36CB443A1C28A716001D21A6 /* Icon.png in Resources */,
+				3632DBBF1C27A96C00101501 /* LaunchScreen.storyboard in Resources */,
 				368ABDF41C279B7000B2EA05 /* Assets.xcassets in Resources */,
 				368ABDF21C279B7000B2EA05 /* Main.storyboard in Resources */,
 			);
@@ -498,6 +502,7 @@
 				368ABE131C279B7000B2EA05 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		368ABE141C279B7000B2EA05 /* Build configuration list for PBXNativeTarget "GoalrTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +511,7 @@
 				368ABE161C279B7000B2EA05 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		368ABE171C279B7000B2EA05 /* Build configuration list for PBXNativeTarget "GoalrUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +520,7 @@
 				368ABE191C279B7000B2EA05 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
