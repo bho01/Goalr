@@ -112,15 +112,33 @@ html
       }
       function callit(){
       console.log('called' + table);
-      var output = '<div class="container" id = "s1" serv = '+'"'+goals[i].id+'"'+'><button id = "delete" class="mdl-button mdl-js-button mdl-js-ripple-effect remove" name = "remove">REMOVE</button><div id = "goalRow" class="row"><div class="input-group"><form action="#"><div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-textfield--colored"><input id = "textInput" class="mdl-textfield__input" type="text" id="sample3" style = "visibility: visible; width: 105px;"><label id ="glr" class="mdl-textfield__label" for="sample3">'+goals[i].goal+ '</label></div></form><span class="input-group-btn"></span></div><div class = "demo-card-wide mdl-card mdl-shadow--2dp"><div class = "mdl-card__title"><div class = "mdl-card__title-text"> <h2>'+goals[i].dateDue+'</h2></div></div><div class = "mdl-cell mdl-cell--4-col" id = "low"><table id = "low" class = "mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp mdl-cell--4-col"><thead><tr><th class = "mdl-data-table__cell--non-numeric">Sub-Goals</th><th>Date Due</th><th>Complete</th></tr></thead><tbody>'+table+'</tbody></table></div><button id = "subadd" class = "mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">ADD +</button></div></div></div>'
+      var ddd = new Date(goals[i].dateDue);
+      var output = '<div class="container" id = "s1" serv = '+'"'+goals[i].id+'"'+'><button id = "delete" class="mdl-button mdl-js-button mdl-js-ripple-effect remove" name = "remove">REMOVE</button><div id = "goalRow" class="row"><div class="input-group"><form action="#"><div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-textfield--colored"><input id = "textInput" class="mdl-textfield__input" type="text" id="sample3" style = "visibility: visible; width: 105px;"><label id ="glr" class="mdl-textfield__label" for="sample3">'+goals[i].goal+ '</label></div></form><span class="input-group-btn"></span></div><div class = "demo-card-wide mdl-card mdl-shadow--2dp"><div class = "mdl-card__title"><div class = "mdl-card__title-text"> <h2>'+ddd.toDateString()+'</h2></div></div><div class = "mdl-cell mdl-cell--4-col" id = "low"><table id = "low" class = "mdl-data-table mdl-js-data-table mdl-shadow--2dp mdl-cell--4-col"><thead><tr><th class = "mdl-data-table__cell--non-numeric">Sub-Goals</th><th>Date Due</th><th>Complete</th></tr></thead><tbody>'+table+'</tbody></table></div><button id = "subadd" class = "mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect subadd">ADD +</button></div></div></div>'
       $("#goalContainer").append(output);
       componentHandler.upgradeElements($('.mdl-textfield').get());
       componentHandler.upgradeElements($('.mdl-button').get());
-      componentHandler.upgradeElements($('mdl-button.mdl-js-button.mdl-js-ripple-effect.remove').get());
+      componentHandler.upgradeElements($('.mdl-button.mdl-js-button.mdl-js-ripple-effect.remove').get());
       componentHandler.upgradeElements($('.mdl-slider').get());
       getRemove();
       }
       }
+      var adder = $(".mdl-button.mdl-js-button.mdl-button--raised.mdl-js-ripple-effect.subadd");
+      adder.click(function(event){
+      console.log($(event.target));
+      var parent = event.target.parentNode.parentNode.childNodes[1].childNodes[0].childNodes[1];
+      console.log(parent);
+      var string = '<tr><td class="mdl-data-table__cell--non-numeric">Goal Label</td><td>Date Due Label</td><td>something</td></tr>'
+      $(parent).append(string);
+      componentHandler.upgradeElements($('.mdl-checkbox'));
+      componentHandler.upgradeAllRegistered();
+      componentHandler.upgradeDom('MaterialCheckbox');
+      componentHandler.upgradeElements($('.mdl-data-table__cell--non-numeric').get());
+      componentHandler.upgradeElements($('.mdl-data-table').get());
+      componentHandler.upgradeElements($('.mdl-textfield').get());
+      componentHandler.upgradeElements($('.mdl-button').get());
+      componentHandler.upgradeElements($('.mdl-button.mdl-js-button.mdl-js-ripple-effect.remove').get());
+      componentHandler.upgradeElements($('.mdl-slider').get());
+      });
       var addButt = document.getElementById("add");
       addButt.onclick = function(){
       console.log("buttonPressed");
