@@ -122,13 +122,31 @@ html
       getRemove();
       }
       }
+      callAdd();
+      function callFunction(){
+      var subsave = $('.mdl-button.mdl-js-button.mdl-button--raised.mdl-js-ripple-effect.subsave');
+      subsave.click(function(event){
+      var parent = $(event.target).parent();
+      console.log('cubcliskd');
+      //socket.emit('subgoal added', goalID, user);
+      event.currentTarget.remove();
+      $(parent).append('<button id = "subadd" class = "mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect subadd">ADD +</button>');
+      callAdd();
+      });
+      };
+      function callAdd(){
       var adder = $(".mdl-button.mdl-js-button.mdl-button--raised.mdl-js-ripple-effect.subadd");
       adder.click(function(event){
       console.log($(event.target));
-      var parent = event.target.parentNode.parentNode.childNodes[1].childNodes[0].childNodes[1];
+      if ($(event.target).attr('class') == 'mdl-button__ripple-container'){
+      var parent = $(event.target).parent().parent();
+      }else{
+      var parent = $(event.target).parent();
+      console.log($(event.target).attr('class'));
+      }
       console.log(parent);
       var string = '<tr><td class="mdl-data-table__cell--non-numeric">Goal Label</td><td>Date Due Label</td><td>something</td></tr>'
-      $(parent).append(string);
+      $(parent[0].childNodes[1].childNodes[0].childNodes[1]).append(string);
       componentHandler.upgradeElements($('.mdl-checkbox'));
       componentHandler.upgradeAllRegistered();
       componentHandler.upgradeDom('MaterialCheckbox');
@@ -138,7 +156,13 @@ html
       componentHandler.upgradeElements($('.mdl-button').get());
       componentHandler.upgradeElements($('.mdl-button.mdl-js-button.mdl-js-ripple-effect.remove').get());
       componentHandler.upgradeElements($('.mdl-slider').get());
+      event.currentTarget.remove();
+
+      var loser = '<button id = "silver" class = "mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect subsave">SAVE</button>';     
+      $(parent).append(loser);
+      callFunction();
       });
+      }
       var addButt = document.getElementById("add");
       addButt.onclick = function(){
       console.log("buttonPressed");
