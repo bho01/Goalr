@@ -145,7 +145,7 @@ html
       console.log($(event.target).attr('class'));
       }
       console.log(parent);
-      var string = '<tr><td class="mdl-data-table__cell--non-numeric">Goal Label</td><td>Date Due Label</td><td>something</td></tr>'
+      var string = '<tr><td class="mdl-data-table__cell--non-numeric"><div class="input-group"><form action="#"><div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-textfield--colored"><input id = "subInput" class="mdl-textfield__input" type="text" id="sample3" style = "visibility: visible; width: 105px;"><label id ="glra" class="mdl-textfield__label" for="sample3" style = "color:black;">Goal</label></div></form></div></td><td>Date Due Label</td><td>something</td></tr>'
       $(parent[0].childNodes[1].childNodes[0].childNodes[1]).append(string);
       componentHandler.upgradeElements($('.mdl-checkbox'));
       componentHandler.upgradeAllRegistered();
