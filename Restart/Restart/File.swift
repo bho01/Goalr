@@ -6,4 +6,5 @@
 //  Copyright © 2015 Goale. All rights reserved.
 //
 
+import Foundation
 import UIKit
