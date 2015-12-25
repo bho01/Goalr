@@ -114,6 +114,9 @@ a{
 #textInput{
   color:white;
 }
+#subInput{
+  color:black;
+}
 #glr{
   color:white;
 }
@@ -137,6 +140,7 @@ footer{
 }
 .demo-card-wide.mdl-card {
   width: 100%;
+  overflow: visible;
 }
 .demo-card-wide > .mdl-card__title {
   color: #fff;
@@ -157,6 +161,11 @@ footer{
   float:right;
   color:white;
   background-color: #26282F;
+}
+#silver{
+  margin:12px;
+  color:white;
+  background-color:#D5D6DD;
 }
 @-webkit-keyframes bounce {
   0%, 60%, 75%, 90%, 100% {

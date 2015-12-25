@@ -34,10 +34,10 @@ db.once('open', function (callback) {
 require('./routes')(app);
 io.on('connection', function(socket){
   console.log('a user connected');
-  socket.on('goal saved', function(gl,usame){
+  socket.on('goal saved', function(gl, date, usame){
   	console.log(gl);
   	User.findOneAndUpdate({username : usame}, 
-				{$push:{goalName:{goal:gl, subgoals : [{goal : ['no subgoals', false]}], dateDue : Date()}}},
+				{$push:{goalName:{goal:gl, subgoals : [{goal : [], date : null}], dateDue : date}}},
 				function (err, numberAffected, raw){
 					if(err){
 						console.log(err);
@@ -56,6 +56,18 @@ io.on('connection', function(socket){
   			console.log(numberAffected);
   		});
 
+  });
+  socket.on('subgoal added', function(id, goalNme, dato, usame){
+  	console.log('id =' + id + 'goalName ' + goalNme + 'date ' + dato + 'usame ' + usame);
+  	User.findOneAndUpdate({username:usame, 
+  		'goalName._id' : ObjectId(id)},
+  		{$push:{'goalName.$.subgoals': {goal : [goalNme, false], date : dato}}},
+  		function (err,numberAffected,raw){
+  			if (err){
+  				console.log(err);
+  			}
+  			console.log(numberAffected);
+  		});
   });
 });
 /*var Goal = new Schema({
