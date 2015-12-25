@@ -111,6 +111,7 @@ html
       table = "";
       }
       }
+      
       function callit(){
       console.log('called' + table);
       var ddd = new Date(goals[i].dateDue);
@@ -130,8 +131,14 @@ html
       var parent = $(event.target).parent();
       console.log('cubcliskd');
       console.log($(parent));
-      var data = $(parent[0].childNodes[1].childNodes[0].childNodes[1].childNodes[1].childNodes[1].childNodes[0].childNodes[0].childNodes[1]).val();
-      var goalname = $(parent[0].childNodes[1].childNodes[0].childNodes[1].childNodes[1].childNodes[0].childNodes[0].childNodes[0].childNodes[0].childNodes[0]).val();
+      var tr = $(parent[0].childNodes[1].childNodes[0].childNodes[1].childNodes[1]);
+      var tbody = $(tr[0].parentNode.childNodes);
+      for (var i = 0; i < $(tbody).length; i ++){
+      console.log($(tbody)[i]);
+      if ($(tbody[i]).attr('class') == 'editing'){
+      console.log($(tbody[i].childNodes[1].childNodes[0].childNodes[0]))
+      var data = $(tbody[i].childNodes[1].childNodes[0].childNodes[0].childNodes[1]).val();
+      var goalname = $(tbody[i].childNodes[0].childNodes[0].childNodes[0].childNodes[0].childNodes[0]).val();
       var date = new Date(data);
       var goalID = $(parent[0].parentNode.parentNode).attr('serv');
       console.log(goalID);
@@ -139,6 +146,10 @@ html
       event.currentTarget.remove();
       $(parent).append('<button id = "subadd" class = "mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect subadd">ADD +</button>');
       callAdd();
+      }else{
+      console.log($(tbody[i]).attr('class'));
+      }
+      }
       });
       };
       function callAdd(){
