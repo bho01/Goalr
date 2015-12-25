@@ -102,7 +102,8 @@ html
       for(var a = 0; a < goals[i].subgoals.length; a ++){
       var reason = goals[i].subgoals[a];
       console.log(reason);
-      var stringimp = '<tr><td class="mdl-data-table__cell--non-numeric">'+reason.goal[0]+'</td><td>Tomorrow</td><td>'+reason.goal[1]+'</td></tr>';
+      var dateStr = new Date(reason.date);
+      var stringimp = '<tr><td class="mdl-data-table__cell--non-numeric">'+reason.goal[0]+'</td><td>'+dateStr.toDateString()+'</td><td>'+reason.goal[1]+'</td></tr>';
       table += stringimp;
       if (a == goals[i].subgoals.length - 1){
       callit();
@@ -128,7 +129,13 @@ html
       subsave.click(function(event){
       var parent = $(event.target).parent();
       console.log('cubcliskd');
-      //socket.emit('subgoal added', goalID, user);
+      console.log($(parent));
+      var data = $(parent[0].childNodes[1].childNodes[0].childNodes[1].childNodes[1].childNodes[1].childNodes[0].childNodes[0].childNodes[1]).val();
+      var goalname = $(parent[0].childNodes[1].childNodes[0].childNodes[1].childNodes[1].childNodes[0].childNodes[0].childNodes[0].childNodes[0].childNodes[0]).val();
+      var date = new Date(data);
+      var goalID = $(parent[0].parentNode.parentNode).attr('serv');
+      console.log(goalID);
+      socket.emit('subgoal added', goalID, goalname, date, user);
       event.currentTarget.remove();
       $(parent).append('<button id = "subadd" class = "mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect subadd">ADD +</button>');
       callAdd();
@@ -145,8 +152,9 @@ html
       console.log($(event.target).attr('class'));
       }
       console.log(parent);
-      var string = '<tr><td class="mdl-data-table__cell--non-numeric"><div class="input-group"><form action="#"><div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-textfield--colored"><input id = "subInput" class="mdl-textfield__input" type="text" id="sample3" style = "visibility: visible; width: 105px;"><label id ="glra" class="mdl-textfield__label" for="sample3" style = "color:black;">Goal</label></div></form></div></td><td>Date Due Label</td><td>something</td></tr>'
+      var string = '<tr class = "editing"><td class="mdl-data-table__cell--non-numeric"><div class="input-group"><form action="#"><div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-textfield--colored"><input id = "subInput" class="mdl-textfield__input" type="text" id="sample3" style = "visibility: visible; width: 105px;"><label id ="glra" class="mdl-textfield__label" for="sample3" style = "color:black;">Goal</label></div></form></div></td><td><div class="form-group"><div class="input-group date" id="datetimepicker"> <input type="text" class="form-control" /> <span class="input-group-addon"> <span class="glyphicon glyphicon-calendar"></span></span></div></div></td><td>False</td></tr>'
       $(parent[0].childNodes[1].childNodes[0].childNodes[1]).append(string);
+      $('#datetimepicker').datetimepicker();
       componentHandler.upgradeElements($('.mdl-checkbox'));
       componentHandler.upgradeAllRegistered();
       componentHandler.upgradeDom('MaterialCheckbox');
@@ -157,7 +165,6 @@ html
       componentHandler.upgradeElements($('.mdl-button.mdl-js-button.mdl-js-ripple-effect.remove').get());
       componentHandler.upgradeElements($('.mdl-slider').get());
       event.currentTarget.remove();
-
       var loser = '<button id = "silver" class = "mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect subsave">SAVE</button>';     
       $(parent).append(loser);
       callFunction();
@@ -167,7 +174,7 @@ html
       addButt.onclick = function(){
       console.log("buttonPressed");
       console.log($("#s1"));
-      var snow = '<div class="container" id = "s1"><button id ="save" class = "mdl-button mdl-js-button mdl-js-ripple-effect save" name = "save">SAVE</button><button id = "delete" class="mdl-button mdl-js-button mdl-js-ripple-effect remove" name = "remove">REMOVE</button><div id = "goalRow" class="row"><div class="col-lg-6"><div class="input-group"><form action="#"><div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-textfield--colored"><input id = "textInput" class="mdl-textfield__input" type="text" id="sample3" style = "visibility: visible; width: 105px;"><label id ="glr" class="mdl-textfield__label" for="sample3">Your Goal</label></div></form><span class="input-group-btn"></span></div></div></div><input class="mdl-slider mdl-js-slider" type="range"min="0" max="100" value="0" tabindex="0"><div class="container" id ="se"><div class="row"><div class="col-sm-6"><div class="form-group"><div class="input-group date" id="datetimepicker1"> <input type="text" class="form-control" /> <span class="input-group-addon"> <span class="glyphicon glyphicon-calendar"></span></span></div></div></div></div></div></div>'
+      var snow = '<div class="container" id = "s1"><button id ="save" class = "mdl-button mdl-js-button mdl-js-ripple-effect save" name = "save">SAVE</button><button id = "delete" class="mdl-button mdl-js-button mdl-js-ripple-effect remove" name = "remove">REMOVE</button><div id = "goalRow" class="row"><div class="col-lg-6"><div class="input-group"><form action="#"><div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-textfield--colored"><input id = "textInput" class="mdl-textfield__input" type="text" id="sample3" style = "visibility: visible; width: 105px;"><label id ="glr" class="mdl-textfield__label" for="sample3">Your Goal</label></div></form><span class="input-group-btn"></span></div></div></div><div class="container" id ="se"><div class="row"><div class="col-sm-6"><div class="form-group"><div class="input-group date" id="datetimepicker1"> <input type="text" class="form-control" /> <span class="input-group-addon"> <span class="glyphicon glyphicon-calendar"></span></span></div></div></div></div></div></div>'
       $("#goalContainer").append(snow);
       componentHandler.upgradeElements($('.mdl-textfield').get());
       componentHandler.upgradeElements($('.mdl-button').get());
@@ -194,7 +201,11 @@ html
       var save = $('.mdl-button.mdl-js-button.mdl-js-ripple-effect.save');
       save.click(function(event){
       var goalName = event.target.parentNode.parentNode.childNodes[2].childNodes[0].childNodes[0].childNodes[0].childNodes[0].childNodes[0].value;
-      socket.emit('goal saved', goalName, user);
+      var data = event.target.parentNode.parentNode.childNodes[3].childNodes[0].childNodes[0].childNodes[0].childNodes[0].childNodes[1].value;
+      console.log($(event.target.parentNode.parentNode.childNodes[3].childNodes[0].childNodes[0].childNodes[0].childNodes[0].childNodes[1]));
+      console.log(data);
+      var date = new Date(data);
+      socket.emit('goal saved', goalName, date, user);
       $(event.target.parentNode).remove();
       });
       }

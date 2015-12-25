@@ -9,7 +9,7 @@ var User = new Schema({
 	lastName : String,
 	password: String,
 	email : String,
-	goalName : [{goal: String, subgoals : [{goal : [String, Boolean]}], dateDue : Date}]
+	goalName : [{goal: String, subgoals : [{goal : [String, Boolean], date : Date}], dateDue : Date}]
 });
 
 

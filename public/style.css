@@ -140,6 +140,7 @@ footer{
 }
 .demo-card-wide.mdl-card {
   width: 100%;
+  overflow: visible;
 }
 .demo-card-wide > .mdl-card__title {
   color: #fff;
