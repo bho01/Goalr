@@ -100,22 +100,36 @@ html
       for (var i = 0; i < goals.length; i++){
       console.log(goals[i].subgoals.length);
       for(var a = 0; a < goals[i].subgoals.length; a ++){
-      var reason = goals[i].subgoals[a];
+      if (goals[i].subgoals.length > 1){
+      var b = (a+1);
+      var reason = goals[i].subgoals[b];
+      if (b < goals[i].subgoals.length){
       console.log(reason);
       var dateStr = new Date(reason.date);
       var stringimp = '<tr><td class="mdl-data-table__cell--non-numeric">'+reason.goal[0]+'</td><td>'+dateStr.toDateString()+'</td><td>'+reason.goal[1]+'</td></tr>';
       table += stringimp;
+      }
       if (a == goals[i].subgoals.length - 1){
       callit();
       reason = [];
       table = "";
+      }
+      }else{
+      table = "";
+      callit();
       }
       }
       
       function callit(){
       console.log('called' + table);
       var ddd = new Date(goals[i].dateDue);
-      var output = '<div class="container" id = "s1" serv = '+'"'+goals[i].id+'"'+'><button id = "delete" class="mdl-button mdl-js-button mdl-js-ripple-effect remove" name = "remove">REMOVE</button><div id = "goalRow" class="row"><div class="input-group"><form action="#"><div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-textfield--colored"><input id = "textInput" class="mdl-textfield__input" type="text" id="sample3" style = "visibility: visible; width: 105px;"><label id ="glr" class="mdl-textfield__label" for="sample3">'+goals[i].goal+ '</label></div></form><span class="input-group-btn"></span></div><div class = "demo-card-wide mdl-card mdl-shadow--2dp"><div class = "mdl-card__title"><div class = "mdl-card__title-text"> <h2>'+ddd.toDateString()+'</h2></div></div><div class = "mdl-cell mdl-cell--4-col" id = "low"><table id = "low" class = "mdl-data-table mdl-js-data-table mdl-shadow--2dp mdl-cell--4-col"><thead><tr><th class = "mdl-data-table__cell--non-numeric">Sub-Goals</th><th>Date Due</th><th>Complete</th></tr></thead><tbody>'+table+'</tbody></table></div><button id = "subadd" class = "mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect subadd">ADD +</button></div></div></div>'
+      var output = '<div class="container" id = "s1" serv = '+'"'+goals[i].id+'"'+'><button id = "delete" class="mdl-button mdl-js-button mdl-js-ripple-effect remove" name = "remove">REMOVE</button><div id = "goalRow" class="row"><div class="input-group"><form action="#"><div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-textfield--colored"><input id = "textInput" class="mdl-textfield__input" type="text" id="sample3" style = "visibility: visible; width: 105px;"><label id ="glr" class="mdl-textfield__label" for="sample3">'+goals[i].goal+ '</label></div></form><span class="input-group-btn"></span></div><div class = "demo-card-wide mdl-card mdl-shadow--2dp"><div class = "mdl-card__title"><div class = "mdl-card__title-text"> <h2>'+ddd.toDateString()+'</h2></div></div>'
+      if (goals[i].subgoals.length > 1){
+      console.log(goals[i].subgoals.length)
+      output += '<div class = "mdl-cell mdl-cell--4-col" id = "low"><table id = "low" class = "mdl-data-table mdl-js-data-table mdl-shadow--2dp mdl-cell--4-col"><thead><tr><th class = "mdl-data-table__cell--non-numeric">Sub-Goals</th><th>Date Due</th><th>Complete</th></tr></thead><tbody>'+table+'</tbody></table></div><button id = "subadd" class = "mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect subadd">ADD +</button></div></div></div>'
+      }else{
+      output += '<button id = "subadd" class = "mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect subadd">ADD +</button></div></div></div>'
+      }
       $("#goalContainer").append(output);
       componentHandler.upgradeElements($('.mdl-textfield').get());
       componentHandler.upgradeElements($('.mdl-button').get());
@@ -146,6 +160,7 @@ html
       event.currentTarget.remove();
       $(parent).append('<button id = "subadd" class = "mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect subadd">ADD +</button>');
       callAdd();
+      $(tbody[i]).removeClass('editing');
       }else{
       console.log($(tbody[i]).attr('class'));
       }
