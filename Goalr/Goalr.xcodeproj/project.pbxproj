@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-<<<<<<< HEAD:Goalr/Goalr.xcodeproj/project.pbxproj
+
 		3632DBBF1C27A96C00101501 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3632DBBE1C27A96C00101501 /* LaunchScreen.storyboard */; };
 		368ABDED1C279B7000B2EA05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368ABDEC1C279B7000B2EA05 /* AppDelegate.swift */; };
 		368ABDEF1C279B7000B2EA05 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368ABDEE1C279B7000B2EA05 /* ViewController.swift */; };
@@ -17,7 +17,7 @@
 		368ABE0D1C279B7000B2EA05 /* GoalrUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368ABE0C1C279B7000B2EA05 /* GoalrUITests.swift */; };
 		368ABE221C27A57500B2EA05 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368ABE211C27A57500B2EA05 /* File.swift */; };
 		36CB443A1C28A716001D21A6 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 36CB44391C28A716001D21A6 /* Icon.png */; };
-=======
+
 		36F641FE1C1F878E00895449 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F641FD1C1F878E00895449 /* AppDelegate.swift */; };
 		36F642001C1F878E00895449 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F641FF1C1F878E00895449 /* ViewController.swift */; };
 		36F642031C1F878E00895449 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36F642011C1F878E00895449 /* Main.storyboard */; };
@@ -29,7 +29,7 @@
 		EDCC55821C2A1E89006E5546 /* pier-bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 367BE27D1C225835001C500E /* pier-bold.otf */; };
 		EDCC55831C2A1E89006E5546 /* pier-italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 367BE27E1C225835001C500E /* pier-italic.otf */; };
 		EDCC55841C2A1E89006E5546 /* pier-regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 367BE27F1C225835001C500E /* pier-regular.otf */; };
->>>>>>> c7cb8bcf955e436b97005afd160186c929442d19:Goalr.xcodeproj/project.pbxproj
+
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -265,12 +265,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-<<<<<<< HEAD:Goalr/Goalr.xcodeproj/project.pbxproj
+
 				36CB443A1C28A716001D21A6 /* Icon.png in Resources */,
 				3632DBBF1C27A96C00101501 /* LaunchScreen.storyboard in Resources */,
 				368ABDF41C279B7000B2EA05 /* Assets.xcassets in Resources */,
 				368ABDF21C279B7000B2EA05 /* Main.storyboard in Resources */,
-=======
 				EDCC55811C2A1E89006E5546 /* pier-bold-italic.otf in Resources */,
 				EDCC55821C2A1E89006E5546 /* pier-bold.otf in Resources */,
 				EDCC55831C2A1E89006E5546 /* pier-italic.otf in Resources */,
@@ -278,7 +277,7 @@
 				36F6422C1C1F884100895449 /* LaunchScreen.storyboard in Resources */,
 				36F642051C1F878E00895449 /* Assets.xcassets in Resources */,
 				36F642031C1F878E00895449 /* Main.storyboard in Resources */,
->>>>>>> c7cb8bcf955e436b97005afd160186c929442d19:Goalr.xcodeproj/project.pbxproj
+
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
