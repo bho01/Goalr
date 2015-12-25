@@ -145,8 +145,9 @@ html
       var parent = $(event.target).parent();
       console.log('cubcliskd');
       console.log($(parent));
-      var tr = $(parent[0].childNodes[1].childNodes[0].childNodes[1].childNodes[1]);
-      var tbody = $(tr[0].parentNode.childNodes);
+      var tbody = $(parent[0].childNodes[1].childNodes[0].childNodes[1].childNodes);
+      console.log($(parent[0]));
+      console.log(tbody)
       for (var i = 0; i < $(tbody).length; i ++){
       console.log($(tbody)[i]);
       if ($(tbody[i]).attr('class') == 'editing'){
@@ -178,7 +179,26 @@ html
       console.log($(event.target).attr('class'));
       }
       console.log(parent);
+      if ($(parent[0].childNodes).length < 3){
+      var card = '<div class = "mdl-cell mdl-cell--4-col" id = "low"><table id = "low" class = "mdl-data-table mdl-js-data-table mdl-shadow--2dp mdl-cell--4-col"><thead><tr><th class = "mdl-data-table__cell--non-numeric">Sub-Goals</th><th>Date Due</th><th>Complete</th></tr></thead><tbody><tr class = "editing"><td class="mdl-data-table__cell--non-numeric"><div class="input-group"><form action="#"><div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-textfield--colored"><input id = "subInput" class="mdl-textfield__input" type="text" id="sample3" style = "visibility: visible; width: 105px;"><label id ="glra" class="mdl-textfield__label" for="sample3" style = "color:black;">Goal</label></div></form></div></td><td><div class="form-group"><div class="input-group date" id="datetimepicker"> <input type="text" class="form-control" /> <span class="input-group-addon"> <span class="glyphicon glyphicon-calendar"></span></span></div></div></td><td>False</td></tr></tbody></table></div>'
+      $(parent).append(card);
+       $('#datetimepicker').datetimepicker();
+      componentHandler.upgradeElements($('.mdl-checkbox'));
+      componentHandler.upgradeAllRegistered();
+      componentHandler.upgradeDom('MaterialCheckbox');
+      componentHandler.upgradeElements($('.mdl-data-table__cell--non-numeric').get());
+      componentHandler.upgradeElements($('.mdl-data-table').get());
+      componentHandler.upgradeElements($('.mdl-textfield').get());
+      componentHandler.upgradeElements($('.mdl-button').get());
+      componentHandler.upgradeElements($('.mdl-button.mdl-js-button.mdl-js-ripple-effect.remove').get());
+      componentHandler.upgradeElements($('.mdl-slider').get());
+      event.currentTarget.remove();
+      var loser = '<button id = "silver" class = "mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect subsave">SAVE</button>';     
+      $(parent).append(loser);
+      callFunction();
+      }else{
       var string = '<tr class = "editing"><td class="mdl-data-table__cell--non-numeric"><div class="input-group"><form action="#"><div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-textfield--colored"><input id = "subInput" class="mdl-textfield__input" type="text" id="sample3" style = "visibility: visible; width: 105px;"><label id ="glra" class="mdl-textfield__label" for="sample3" style = "color:black;">Goal</label></div></form></div></td><td><div class="form-group"><div class="input-group date" id="datetimepicker"> <input type="text" class="form-control" /> <span class="input-group-addon"> <span class="glyphicon glyphicon-calendar"></span></span></div></div></td><td>False</td></tr>'
+      console.log($(parent[0]));
       $(parent[0].childNodes[1].childNodes[0].childNodes[1]).append(string);
       $('#datetimepicker').datetimepicker();
       componentHandler.upgradeElements($('.mdl-checkbox'));
@@ -194,6 +214,7 @@ html
       var loser = '<button id = "silver" class = "mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect subsave">SAVE</button>';     
       $(parent).append(loser);
       callFunction();
+      }
       });
       }
       var addButt = document.getElementById("add");
