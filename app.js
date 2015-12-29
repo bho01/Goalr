@@ -95,7 +95,7 @@ io.on('connection', function(socket){
   		});
   });
   socket.on('test',function(string){
-  	socket.emit('great', 'awesome');
+  	socket.emit('great', string);
   });
 });
 /*var Goal = new Schema({
