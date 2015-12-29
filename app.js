@@ -94,6 +94,9 @@ io.on('connection', function(socket){
   			console.log(numberAffected);
   		});
   });
+  socket.on('test',function(string){
+  	socket.emit('great', 'awesome');
+  });
 });
 /*var Goal = new Schema({
 	goal : {goalr : String,
