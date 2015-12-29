@@ -26,9 +26,9 @@ passport.serializeUser(User.serializeUser());
 passport.deserializeUser(User.deserializeUser());
 
 Parse.initialize(
-	'sowcEXdfzxJYpQbZQRz42Fdo2eim885MUoykYz4s',
-	'qqa5Z7g1uX1v4UrVtX0ABeUrfHMC6hF0aIaHsr14',
-	'sD6giYbh9IkOCtWekweLQI7wgpMnWVekvYc9hUBw'
+	process.env.APPID,
+	process.env.JSKEY,
+	process.env.MASTKEY
 );
 /*var query = new Parse.Query(Parse.Installation)
 	, data = {
