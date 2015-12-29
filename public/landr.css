@@ -10,17 +10,14 @@ html,body{
   	-webkit-background-size: cover;
  	-moz-background-size: cover;
  	background-size: cover;
- 	-o-background-size: cover;
-      
-        background-color: black;
+ 	-o-background-size: cover;  
+    background-color: black;
 }
 .text-vertical-center{
 	display: table-cell;
 	text-align: center;
 	vertical-align: middle;
-
-
-  color: white;
+  	color: white;
 }
 #login{
 	color:white;
@@ -39,4 +36,13 @@ html,body{
 #regg:hover{
 	color:black;
 	background-color:white;
+}
+.link{
+	color:white;
+	padding:3px;
+}
+.link:hover{
+	background-color: white;
+	color:black;
+	text-decoration: none;
 }

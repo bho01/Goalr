@@ -9,6 +9,7 @@ var io = require('socket.io')(http);
 app.use(express.static('public'));
 var mongoose = require('mongoose');
 var ObjectId = require('mongodb').ObjectId;
+var Parse = require('parse/node').Parse;
 app.set('views', __dirname + '/views');
 app.set('view engine', 'jade');
 app.set('view options', { layout: false });
@@ -24,6 +25,30 @@ passport.use(new LocalStrategy(User.authenticate()));
 passport.serializeUser(User.serializeUser());
 passport.deserializeUser(User.deserializeUser());
 
+Parse.initialize(
+	'sowcEXdfzxJYpQbZQRz42Fdo2eim885MUoykYz4s',
+	'qqa5Z7g1uX1v4UrVtX0ABeUrfHMC6hF0aIaHsr14',
+	'sD6giYbh9IkOCtWekweLQI7wgpMnWVekvYc9hUBw'
+);
+/*var query = new Parse.Query(Parse.Installation)
+	, data = {
+		'alert' : 'Hi!',
+		'anotherObjectId' : '',
+		'sound' : 'cheering.caf'
+	};
+query.equalTo('objectId','L43M9tlgLv');
+query.equalTo('deviceType', 'ios');
+
+Parse.Push.send({
+	where : query,
+	data : data},{
+		success : function (){
+			console.log('arguments', arguments);
+		},
+		error : function (error){
+			console.log('Error : ' + error.code + ' ' + error.message);
+		}
+	}); */
 mongoose.connect('mongodb://icu:madeonearth@ds057944.mongolab.com:57944/goalr');
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));

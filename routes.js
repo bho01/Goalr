@@ -50,5 +50,8 @@ module.exports = function(app){
       req.logout();
       res.redirect('/');
   	});
+  	app.get('/info', function(req,res){
+  		res.render('info');
+  	});
 
 }
