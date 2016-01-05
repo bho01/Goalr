@@ -16,7 +16,7 @@
 		81BA81791A49E0DB00E65899 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81BA81781A49E0DB00E65899 /* AudioToolbox.framework */; };
 		81BA817B1A49E0E500E65899 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81BA817A1A49E0E500E65899 /* SystemConfiguration.framework */; };
 		81BA817F1A49E0F000E65899 /* libstdc++.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 81BA817E1A49E0F000E65899 /* libstdc++.6.dylib */; };
-		EDC9C0DF1C330A97006CFDC3 /* GLRTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC9C0DE1C330A97006CFDC3 /* GLRTableViewController.swift */; };
+		ED7E16901C3C8F2D002F4853 /* GLRTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7E168F1C3C8F2D002F4853 /* GLRTableViewController.swift */; };
 		EDC9C0E31C331007006CFDC3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDC9C0E21C331007006CFDC3 /* LaunchScreen.storyboard */; };
 		EDC9C0FF1C331764006CFDC3 /* SocketAckEmitter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC9C0EC1C331764006CFDC3 /* SocketAckEmitter.swift */; };
 		EDC9C1001C331764006CFDC3 /* SocketAckManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC9C0ED1C331764006CFDC3 /* SocketAckManager.swift */; };
@@ -56,7 +56,7 @@
 		81BA817A1A49E0E500E65899 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		81BA817E1A49E0F000E65899 /* libstdc++.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.dylib"; path = "usr/lib/libstdc++.6.dylib"; sourceTree = SDKROOT; };
 		81BA81801A49E10C00E65899 /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseUI.framework; sourceTree = "<group>"; };
-		EDC9C0DE1C330A97006CFDC3 /* GLRTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GLRTableViewController.swift; path = ../GLRTableViewController.swift; sourceTree = "<group>"; };
+		ED7E168F1C3C8F2D002F4853 /* GLRTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GLRTableViewController.swift; sourceTree = "<group>"; };
 		EDC9C0E21C331007006CFDC3 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EDC9C0EC1C331764006CFDC3 /* SocketAckEmitter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketAckEmitter.swift; sourceTree = "<group>"; };
 		EDC9C0ED1C331764006CFDC3 /* SocketAckManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketAckManager.swift; sourceTree = "<group>"; };
@@ -129,7 +129,7 @@
 		81BA81471A49DA1800E65899 /* Goalr */ = {
 			isa = PBXGroup;
 			children = (
-				EDC9C0DE1C330A97006CFDC3 /* GLRTableViewController.swift */,
+				ED7E168F1C3C8F2D002F4853 /* GLRTableViewController.swift */,
 				EDC9C1181C3488D5006CFDC3 /* GLRTableViewCell.swift */,
 				EDC9C11A1C34CC55006CFDC3 /* GLRSubTableViewCell.swift */,
 				81BA814A1A49DA1800E65899 /* AppDelegate.swift */,
@@ -304,10 +304,10 @@
 				EDC9C0FF1C331764006CFDC3 /* SocketAckEmitter.swift in Sources */,
 				EDC9C10B1C331764006CFDC3 /* SocketLogger.swift in Sources */,
 				81BA814B1A49DA1800E65899 /* AppDelegate.swift in Sources */,
+				ED7E16901C3C8F2D002F4853 /* GLRTableViewController.swift in Sources */,
 				EDC9C1091C331764006CFDC3 /* SocketIOClientOption.swift in Sources */,
 				EDC9C10F1C331764006CFDC3 /* SocketTypes.swift in Sources */,
 				EDC9C10C1C331764006CFDC3 /* SocketPacket.swift in Sources */,
-				EDC9C0DF1C330A97006CFDC3 /* GLRTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
