@@ -137,8 +137,8 @@
 				EDC9C0E21C331007006CFDC3 /* LaunchScreen.storyboard */,
 			);
 			name = Goalr;
-			path = ParseStarterProject;
-			sourceTree = "<group>";
+			path = "/Users/Ivan2/Documents/Goalr/Goalr-iOS/Goalr";
+			sourceTree = "<absolute>";
 		};
 		81BA816A1A49DB5600E65899 /* Frameworks */ = {
 			isa = PBXGroup;
