@@ -20,7 +20,13 @@ module.exports = function(app){
 				}
 				var js = JSON.stringify(docs);
 				console.log(js);
-				res.render('index',{user : req.user, docs : js});
+				console.log('User-Agent: ' + req.headers['user-agent']);
+				var userAgent = req.headers['user-agent'];
+				if(userAgent.indexOf('Goalr') > -1 || userAgent.indexOf('iPhone') > -1){
+					res.send(js);
+				}else{
+					res.render('index',{user : req.user, docs : js});
+				}
 
 			});
 	  	}
@@ -47,7 +53,7 @@ module.exports = function(app){
 		res.redirect('/')
  	});
  	app.get('/logout', function(req, res) {
-      req.logout();
+      req.logout();  
       res.redirect('/');
   	});
   	app.get('/info', function(req,res){
