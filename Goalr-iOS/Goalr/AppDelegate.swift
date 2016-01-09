@@ -45,6 +45,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         PFUser.enableAutomaticUser()
 
         let defaultACL = PFACL();
+        
+        if (!NSUserDefaults.standardUserDefaults().boolForKey("HasLaunchedOnce")){
+            NSUserDefaults.standardUserDefaults().setBool(true, forKey: "HasLaunchedOnce")
+            NSUserDefaults.standardUserDefaults().synchronize()
+            let key = Keychain()
+            key.setPasscode("GoalrUsername", passcode: "");
+            key.setPasscode("GoalrPassword", passcode: "");
+            
+        }
 
         // If you would like all objects to be private by default, remove this line.
         defaultACL.publicReadAccess = true
