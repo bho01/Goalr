@@ -7,7 +7,22 @@ html(lang='en')
 		link(rel='stylesheet', href='info.css')
 		script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js')
 		script(src='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js')
+		script(src='typed.min.js')
 	body
 		.container
 			.text-vertical-center
-				h1 work in progress
+				h1.goals work in progress
+				
+	script.
+		$(document).ready(function(){
+		$(".goals").typed({
+		strings:['Goalr is achievement', 'Goalr is perserverance', 'Goalr is positivity', 'Goalr is focus', 'Goalr helps sets your goals and keeps you on track for success.'],
+		typeSpeed:0,
+		backDelay : 300,
+		showCursor: false,
+		callback: function(){
+		$(".text-vertical-center").append("<div class = 'not'><h1> scroll down for more </h1></div>")
+		$(".not").delay(1000).animate({opacity : 1}, 700)
+		}
+		});
+		})
