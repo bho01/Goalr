@@ -5,6 +5,9 @@
 
 * [Ivan Chau](https://github.com/ichauster) - Developer/Web Section
 
+##To do list
+
+* 
 
 ###Code Docs
 Goalr is a web (and eventually mobile?) platform. It will soon come to iOS and Android.
