@@ -26,5 +26,12 @@ Although the iOS authentication is very primitive (username/password), I've simp
 
 Other than this, I've kept the app to a similar format to the web application. I am working on completing the functionality (Adding subgoals/goals) and smoothing out some rough edges with the design.
 
+### Watch App () by Brendon. 
+We believe that watches and other wearables will be the future of technology. Goalr Watch will connect to your phone and it should send push notifications to your wrist.
 
+Auth will be done on the phone. The watch will recognize that the person unlocked Goalr via phone and will automatically unlock.
+
+The interface would be challenging since the screen size is extremely small. At the same time we want to incorporate at least most of the features that are in web and mobile. To solve that problem, we changed the UI completely to a page view controller. Each page will contain a circular progress bar of your goal. To get to another goal, you simply slide the screen left or right. To edit the goal, you simply tap on the goal. We also take advantage of the Force Touch capabilities of the Apple Watch. To delete or rename the goal, you simply press harder. It wil then give two options, delete goal and rename goal.
+
+Brendon is currently developing this on XCode. This project is aimed to finish at around late February.
 
