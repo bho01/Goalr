@@ -1,13 +1,17 @@
 #Goalr
 
-###Contributors 
+##Contributors 
 * [Brendon Ho](https://github.com/brendonho01) - Creator/Mobile Section
 
 * [Ivan Chau](https://github.com/ichauster) - Developer/Web Section
 
 ##To do list
-
-* 
+* Finish Web and info page
+* Redesign UI for web
+* Finish iOS app
+* Compile to Android
+* Make the watch connection
+* Make android wear edition as well
 
 ###Code Docs
 Goalr is a web (and eventually mobile?) platform. It will soon come to iOS and Android.
