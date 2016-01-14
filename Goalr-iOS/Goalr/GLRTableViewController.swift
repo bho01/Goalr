@@ -17,6 +17,7 @@ class GLRTableViewController: UITableViewController {
     var goalArray = NSArray()
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.hidesBackButton = true;
         self.addHandlers()
         self.getGoals()
         self.socket.connect()

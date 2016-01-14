@@ -14,8 +14,17 @@
 		81BA81711A49DB6800E65899 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81BA816C1A49DB6800E65899 /* Parse.framework */; };
 		81BA81791A49E0DB00E65899 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81BA81781A49E0DB00E65899 /* AudioToolbox.framework */; };
 		81BA817B1A49E0E500E65899 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81BA817A1A49E0E500E65899 /* SystemConfiguration.framework */; };
+<<<<<<< HEAD
 		ED7E16901C3C8F2D002F4853 /* Goalr in Sources */ = {isa = PBXBuildFile; fileRef = ED7E168F1C3C8F2D002F4853 /* Goalr */; };
 		EDC9C0E31C331007006CFDC3 /* Goalr in Resources */ = {isa = PBXBuildFile; fileRef = EDC9C0E21C331007006CFDC3 /* Goalr */; };
+=======
+		81BA817F1A49E0F000E65899 /* libstdc++.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 81BA817E1A49E0F000E65899 /* libstdc++.6.dylib */; };
+		ED7E16901C3C8F2D002F4853 /* GLRTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7E168F1C3C8F2D002F4853 /* GLRTableViewController.swift */; };
+		ED7E16921C405AA6002F4853 /* GLRLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7E16911C405AA6002F4853 /* GLRLoginViewController.swift */; };
+		ED7E169D1C4068CB002F4853 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED7E169C1C4068CB002F4853 /* Security.framework */; };
+		ED7E16A01C4069E5002F4853 /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7E169F1C4069E5002F4853 /* Keychain.swift */; };
+		EDC9C0E31C331007006CFDC3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDC9C0E21C331007006CFDC3 /* LaunchScreen.storyboard */; };
+>>>>>>> 2992052f4b04af632e861b96c3d488eb44136b75
 		EDC9C0FF1C331764006CFDC3 /* SocketAckEmitter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC9C0EC1C331764006CFDC3 /* SocketAckEmitter.swift */; };
 		EDC9C1001C331764006CFDC3 /* SocketAckManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC9C0ED1C331764006CFDC3 /* SocketAckManager.swift */; };
 		EDC9C1011C331764006CFDC3 /* SocketAnyEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC9C0EE1C331764006CFDC3 /* SocketAnyEvent.swift */; };
@@ -49,8 +58,18 @@
 		81BA816C1A49DB6800E65899 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		81BA81781A49E0DB00E65899 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		81BA817A1A49E0E500E65899 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+<<<<<<< HEAD
 		ED7E168F1C3C8F2D002F4853 /* Goalr */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Goalr; sourceTree = "<group>"; };
 		EDC9C0E21C331007006CFDC3 /* Goalr */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Goalr; sourceTree = "<group>"; };
+=======
+		81BA817E1A49E0F000E65899 /* libstdc++.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.dylib"; path = "usr/lib/libstdc++.6.dylib"; sourceTree = SDKROOT; };
+		81BA81801A49E10C00E65899 /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseUI.framework; sourceTree = "<group>"; };
+		ED7E168F1C3C8F2D002F4853 /* GLRTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GLRTableViewController.swift; sourceTree = "<group>"; };
+		ED7E16911C405AA6002F4853 /* GLRLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GLRLoginViewController.swift; sourceTree = "<group>"; };
+		ED7E169C1C4068CB002F4853 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		ED7E169F1C4069E5002F4853 /* Keychain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Keychain.swift; sourceTree = "<group>"; };
+		EDC9C0E21C331007006CFDC3 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+>>>>>>> 2992052f4b04af632e861b96c3d488eb44136b75
 		EDC9C0EC1C331764006CFDC3 /* SocketAckEmitter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketAckEmitter.swift; sourceTree = "<group>"; };
 		EDC9C0ED1C331764006CFDC3 /* SocketAckManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketAckManager.swift; sourceTree = "<group>"; };
 		EDC9C0EE1C331764006CFDC3 /* SocketAnyEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketAnyEvent.swift; sourceTree = "<group>"; };
@@ -79,6 +98,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+<<<<<<< HEAD
+=======
+				ED7E169D1C4068CB002F4853 /* Security.framework in Frameworks */,
+				81BA817F1A49E0F000E65899 /* libstdc++.6.dylib in Frameworks */,
+>>>>>>> 2992052f4b04af632e861b96c3d488eb44136b75
 				81BA817B1A49E0E500E65899 /* SystemConfiguration.framework in Frameworks */,
 				81BA81791A49E0DB00E65899 /* AudioToolbox.framework in Frameworks */,
 				81BA81711A49DB6800E65899 /* Parse.framework in Frameworks */,
@@ -120,10 +144,19 @@
 		81BA81471A49DA1800E65899 /* Goalr */ = {
 			isa = PBXGroup;
 			children = (
+<<<<<<< HEAD
 				ED7E168F1C3C8F2D002F4853 /* Goalr */,
 				EDC9C1181C3488D5006CFDC3 /* Goalr */,
 				EDC9C11A1C34CC55006CFDC3 /* Goalr */,
 				81BA814A1A49DA1800E65899 /* Goalr */,
+=======
+				ED7E16911C405AA6002F4853 /* GLRLoginViewController.swift */,
+				ED7E169F1C4069E5002F4853 /* Keychain.swift */,
+				ED7E168F1C3C8F2D002F4853 /* GLRTableViewController.swift */,
+				EDC9C1181C3488D5006CFDC3 /* GLRTableViewCell.swift */,
+				EDC9C11A1C34CC55006CFDC3 /* GLRSubTableViewCell.swift */,
+				81BA814A1A49DA1800E65899 /* AppDelegate.swift */,
+>>>>>>> 2992052f4b04af632e861b96c3d488eb44136b75
 				814C3AC61B69877600E307BB /* Main.storyboard */,
 				EDC9C0E21C331007006CFDC3 /* Goalr */,
 			);
@@ -134,6 +167,7 @@
 		81BA816A1A49DB5600E65899 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				ED7E169C1C4068CB002F4853 /* Security.framework */,
 				81BA816B1A49DB6800E65899 /* Bolts.framework */,
 				81BA816C1A49DB6800E65899 /* Parse.framework */,
 				81BA81751A49E0C500E65899 /* System Frameworks */,
@@ -205,7 +239,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0720;
-				ORGANIZATIONNAME = Parse;
+				ORGANIZATIONNAME = Goalr;
 				TargetAttributes = {
 					81BA81441A49DA1800E65899 = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -275,6 +309,7 @@
 				EDC9C1191C3488D5006CFDC3 /* Goalr in Sources */,
 				EDC9C1031C331764006CFDC3 /* SocketEngineClient.swift in Sources */,
 				EDC9C1071C331764006CFDC3 /* SocketFixUTF8.swift in Sources */,
+				ED7E16921C405AA6002F4853 /* GLRLoginViewController.swift in Sources */,
 				EDC9C1081C331764006CFDC3 /* SocketIOClient.swift in Sources */,
 				EDC9C10D1C331764006CFDC3 /* SocketParser.swift in Sources */,
 				EDC9C11B1C34CC55006CFDC3 /* Goalr in Sources */,
@@ -289,8 +324,14 @@
 				EDC9C1111C331764006CFDC3 /* WebSocket.swift in Sources */,
 				EDC9C0FF1C331764006CFDC3 /* SocketAckEmitter.swift in Sources */,
 				EDC9C10B1C331764006CFDC3 /* SocketLogger.swift in Sources */,
+<<<<<<< HEAD
 				81BA814B1A49DA1800E65899 /* Goalr in Sources */,
 				ED7E16901C3C8F2D002F4853 /* Goalr in Sources */,
+=======
+				ED7E16A01C4069E5002F4853 /* Keychain.swift in Sources */,
+				81BA814B1A49DA1800E65899 /* AppDelegate.swift in Sources */,
+				ED7E16901C3C8F2D002F4853 /* GLRTableViewController.swift in Sources */,
+>>>>>>> 2992052f4b04af632e861b96c3d488eb44136b75
 				EDC9C1091C331764006CFDC3 /* SocketIOClientOption.swift in Sources */,
 				EDC9C10F1C331764006CFDC3 /* SocketTypes.swift in Sources */,
 				EDC9C10C1C331764006CFDC3 /* SocketPacket.swift in Sources */,
