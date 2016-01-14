@@ -1,0 +1,512 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		36C9EE6B1C445F83007B7DD7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C9EE6A1C445F83007B7DD7 /* AppDelegate.swift */; };
+		36C9EE6D1C445F83007B7DD7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C9EE6C1C445F83007B7DD7 /* ViewController.swift */; };
+		36C9EE701C445F83007B7DD7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36C9EE6E1C445F83007B7DD7 /* Main.storyboard */; };
+		36C9EE721C445F83007B7DD7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36C9EE711C445F83007B7DD7 /* Assets.xcassets */; };
+		36C9EE751C445F83007B7DD7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36C9EE731C445F83007B7DD7 /* LaunchScreen.storyboard */; };
+		36C9EE801C445F83007B7DD7 /* Goalr_WatchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C9EE7F1C445F83007B7DD7 /* Goalr_WatchTests.swift */; };
+		36C9EE8B1C445F83007B7DD7 /* Goalr_WatchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C9EE8A1C445F83007B7DD7 /* Goalr_WatchUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		36C9EE7C1C445F83007B7DD7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 36C9EE5F1C445F83007B7DD7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 36C9EE661C445F83007B7DD7;
+			remoteInfo = "Goalr Watch";
+		};
+		36C9EE871C445F83007B7DD7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 36C9EE5F1C445F83007B7DD7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 36C9EE661C445F83007B7DD7;
+			remoteInfo = "Goalr Watch";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		36C9EE671C445F83007B7DD7 /* Goalr Watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Goalr Watch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		36C9EE6A1C445F83007B7DD7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		36C9EE6C1C445F83007B7DD7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		36C9EE6F1C445F83007B7DD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		36C9EE711C445F83007B7DD7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		36C9EE741C445F83007B7DD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		36C9EE761C445F83007B7DD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		36C9EE7B1C445F83007B7DD7 /* Goalr WatchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Goalr WatchTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		36C9EE7F1C445F83007B7DD7 /* Goalr_WatchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Goalr_WatchTests.swift; sourceTree = "<group>"; };
+		36C9EE811C445F83007B7DD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		36C9EE861C445F83007B7DD7 /* Goalr WatchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Goalr WatchUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		36C9EE8A1C445F83007B7DD7 /* Goalr_WatchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Goalr_WatchUITests.swift; sourceTree = "<group>"; };
+		36C9EE8C1C445F83007B7DD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		36C9EE641C445F83007B7DD7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36C9EE781C445F83007B7DD7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36C9EE831C445F83007B7DD7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		36C9EE5E1C445F83007B7DD7 = {
+			isa = PBXGroup;
+			children = (
+				36C9EE691C445F83007B7DD7 /* Goalr Watch */,
+				36C9EE7E1C445F83007B7DD7 /* Goalr WatchTests */,
+				36C9EE891C445F83007B7DD7 /* Goalr WatchUITests */,
+				36C9EE681C445F83007B7DD7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		36C9EE681C445F83007B7DD7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				36C9EE671C445F83007B7DD7 /* Goalr Watch.app */,
+				36C9EE7B1C445F83007B7DD7 /* Goalr WatchTests.xctest */,
+				36C9EE861C445F83007B7DD7 /* Goalr WatchUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		36C9EE691C445F83007B7DD7 /* Goalr Watch */ = {
+			isa = PBXGroup;
+			children = (
+				36C9EE6A1C445F83007B7DD7 /* AppDelegate.swift */,
+				36C9EE6C1C445F83007B7DD7 /* ViewController.swift */,
+				36C9EE6E1C445F83007B7DD7 /* Main.storyboard */,
+				36C9EE711C445F83007B7DD7 /* Assets.xcassets */,
+				36C9EE731C445F83007B7DD7 /* LaunchScreen.storyboard */,
+				36C9EE761C445F83007B7DD7 /* Info.plist */,
+			);
+			path = "Goalr Watch";
+			sourceTree = "<group>";
+		};
+		36C9EE7E1C445F83007B7DD7 /* Goalr WatchTests */ = {
+			isa = PBXGroup;
+			children = (
+				36C9EE7F1C445F83007B7DD7 /* Goalr_WatchTests.swift */,
+				36C9EE811C445F83007B7DD7 /* Info.plist */,
+			);
+			path = "Goalr WatchTests";
+			sourceTree = "<group>";
+		};
+		36C9EE891C445F83007B7DD7 /* Goalr WatchUITests */ = {
+			isa = PBXGroup;
+			children = (
+				36C9EE8A1C445F83007B7DD7 /* Goalr_WatchUITests.swift */,
+				36C9EE8C1C445F83007B7DD7 /* Info.plist */,
+			);
+			path = "Goalr WatchUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		36C9EE661C445F83007B7DD7 /* Goalr Watch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 36C9EE8F1C445F83007B7DD7 /* Build configuration list for PBXNativeTarget "Goalr Watch" */;
+			buildPhases = (
+				36C9EE631C445F83007B7DD7 /* Sources */,
+				36C9EE641C445F83007B7DD7 /* Frameworks */,
+				36C9EE651C445F83007B7DD7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Goalr Watch";
+			productName = "Goalr Watch";
+			productReference = 36C9EE671C445F83007B7DD7 /* Goalr Watch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		36C9EE7A1C445F83007B7DD7 /* Goalr WatchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 36C9EE921C445F83007B7DD7 /* Build configuration list for PBXNativeTarget "Goalr WatchTests" */;
+			buildPhases = (
+				36C9EE771C445F83007B7DD7 /* Sources */,
+				36C9EE781C445F83007B7DD7 /* Frameworks */,
+				36C9EE791C445F83007B7DD7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				36C9EE7D1C445F83007B7DD7 /* PBXTargetDependency */,
+			);
+			name = "Goalr WatchTests";
+			productName = "Goalr WatchTests";
+			productReference = 36C9EE7B1C445F83007B7DD7 /* Goalr WatchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		36C9EE851C445F83007B7DD7 /* Goalr WatchUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 36C9EE951C445F83007B7DD7 /* Build configuration list for PBXNativeTarget "Goalr WatchUITests" */;
+			buildPhases = (
+				36C9EE821C445F83007B7DD7 /* Sources */,
+				36C9EE831C445F83007B7DD7 /* Frameworks */,
+				36C9EE841C445F83007B7DD7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				36C9EE881C445F83007B7DD7 /* PBXTargetDependency */,
+			);
+			name = "Goalr WatchUITests";
+			productName = "Goalr WatchUITests";
+			productReference = 36C9EE861C445F83007B7DD7 /* Goalr WatchUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		36C9EE5F1C445F83007B7DD7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = Goalr;
+				TargetAttributes = {
+					36C9EE661C445F83007B7DD7 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = ZDXRK6UNH5;
+					};
+					36C9EE7A1C445F83007B7DD7 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = ZDXRK6UNH5;
+						TestTargetID = 36C9EE661C445F83007B7DD7;
+					};
+					36C9EE851C445F83007B7DD7 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = ZDXRK6UNH5;
+						TestTargetID = 36C9EE661C445F83007B7DD7;
+					};
+				};
+			};
+			buildConfigurationList = 36C9EE621C445F83007B7DD7 /* Build configuration list for PBXProject "Goalr Watch" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 36C9EE5E1C445F83007B7DD7;
+			productRefGroup = 36C9EE681C445F83007B7DD7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				36C9EE661C445F83007B7DD7 /* Goalr Watch */,
+				36C9EE7A1C445F83007B7DD7 /* Goalr WatchTests */,
+				36C9EE851C445F83007B7DD7 /* Goalr WatchUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		36C9EE651C445F83007B7DD7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36C9EE751C445F83007B7DD7 /* LaunchScreen.storyboard in Resources */,
+				36C9EE721C445F83007B7DD7 /* Assets.xcassets in Resources */,
+				36C9EE701C445F83007B7DD7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36C9EE791C445F83007B7DD7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36C9EE841C445F83007B7DD7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		36C9EE631C445F83007B7DD7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36C9EE6D1C445F83007B7DD7 /* ViewController.swift in Sources */,
+				36C9EE6B1C445F83007B7DD7 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36C9EE771C445F83007B7DD7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36C9EE801C445F83007B7DD7 /* Goalr_WatchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36C9EE821C445F83007B7DD7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36C9EE8B1C445F83007B7DD7 /* Goalr_WatchUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		36C9EE7D1C445F83007B7DD7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 36C9EE661C445F83007B7DD7 /* Goalr Watch */;
+			targetProxy = 36C9EE7C1C445F83007B7DD7 /* PBXContainerItemProxy */;
+		};
+		36C9EE881C445F83007B7DD7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 36C9EE661C445F83007B7DD7 /* Goalr Watch */;
+			targetProxy = 36C9EE871C445F83007B7DD7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		36C9EE6E1C445F83007B7DD7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				36C9EE6F1C445F83007B7DD7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		36C9EE731C445F83007B7DD7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				36C9EE741C445F83007B7DD7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		36C9EE8D1C445F83007B7DD7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		36C9EE8E1C445F83007B7DD7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		36C9EE901C445F83007B7DD7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "Goalr Watch/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Goalr.Goalr-Watch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		36C9EE911C445F83007B7DD7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "Goalr Watch/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Goalr.Goalr-Watch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		36C9EE931C445F83007B7DD7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Goalr WatchTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Goalr.Goalr-WatchTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Goalr Watch.app/Goalr Watch";
+			};
+			name = Debug;
+		};
+		36C9EE941C445F83007B7DD7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Goalr WatchTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Goalr.Goalr-WatchTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Goalr Watch.app/Goalr Watch";
+			};
+			name = Release;
+		};
+		36C9EE961C445F83007B7DD7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Goalr WatchUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Goalr.Goalr-WatchUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Goalr Watch";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		36C9EE971C445F83007B7DD7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Goalr WatchUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Goalr.Goalr-WatchUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Goalr Watch";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		36C9EE621C445F83007B7DD7 /* Build configuration list for PBXProject "Goalr Watch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				36C9EE8D1C445F83007B7DD7 /* Debug */,
+				36C9EE8E1C445F83007B7DD7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		36C9EE8F1C445F83007B7DD7 /* Build configuration list for PBXNativeTarget "Goalr Watch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				36C9EE901C445F83007B7DD7 /* Debug */,
+				36C9EE911C445F83007B7DD7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		36C9EE921C445F83007B7DD7 /* Build configuration list for PBXNativeTarget "Goalr WatchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				36C9EE931C445F83007B7DD7 /* Debug */,
+				36C9EE941C445F83007B7DD7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		36C9EE951C445F83007B7DD7 /* Build configuration list for PBXNativeTarget "Goalr WatchUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				36C9EE961C445F83007B7DD7 /* Debug */,
+				36C9EE971C445F83007B7DD7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 36C9EE5F1C445F83007B7DD7 /* Project object */;
+}
