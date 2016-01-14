@@ -1,11 +1,15 @@
-#Goalr
+# Goalr
 
-##Contributors 
+  Our main goal is to help people pursue their dreams and complete their short and long term goals. To do that we must reach out to every single device, and on any other screen size. That includes computers, phones, tablets, smartwatches and other wearables. We believe this app will help people to move forward and achieve their goal, whether it's to get an A on a test or to make it in the olympics.
+  You can check it out on http://goalr.herokuapp.com/
+  and you can learn more at http://goalr.herokuapp.com/info/
+
+## Contributors 
 * [Brendon Ho](https://github.com/brendonho01) - Creator/Mobile Section
 
 * [Ivan Chau](https://github.com/ichauster) - Developer/Web Section
 
-##To do list
+## To do list
 * Finish Web and info page
 * Redesign UI for web
 * Finish iOS app
@@ -13,7 +17,7 @@
 * Make the watch connection
 * Make android wear edition as well
 
-###Code Docs
+### Code Docs
 Goalr is a web (and eventually mobile?) platform. It will soon come to iOS and Android.
 
 NodeJS, Express and Socket.io power our backend.
@@ -33,12 +37,17 @@ Although the iOS authentication is very primitive (username/password), I've simp
 
 Other than this, I've kept the app to a similar format to the web application. I am working on completing the functionality (Adding subgoals/goals) and smoothing out some rough edges with the design.
 
-### Watch App () by Brendon. 
+### Watch App (Goalr Watch) by Brendon. 
 We believe that watches and other wearables will be the future of technology. Goalr Watch will connect to your phone and it should send push notifications to your wrist.
 
 Auth will be done on the phone. The watch will recognize that the person unlocked Goalr via phone and will automatically unlock.
 
 The interface would be challenging since the screen size is extremely small. At the same time we want to incorporate at least most of the features that are in web and mobile. To solve that problem, we changed the UI completely to a page view controller. Each page will contain a circular progress bar of your goal. To get to another goal, you simply slide the screen left or right. To edit the goal, you simply tap on the goal. We also take advantage of the Force Touch capabilities of the Apple Watch. To delete, add, or rename the goal, you simply press harder. It wil then give two options, delete goal,add goal, and rename goal.
 
-Brendon is currently developing this on XCode. This project is aimed to finish at around late February.
+Brendon is currently developing this on XCode. This project is aimed to finish at around late February. The test is on the Watch Test Folder.
+
+### Android App (Goalr Android) by Brendon
+Essentially, we will compile the iOS source code from Goalr-iOS into Java using Silver, a Swift to Java Compiler. Parse push notifications and MongoDB servers and auth will remain the same. However, the design will be set to the Android Marshmellow standard Material Design. Material provides a beautiful interface with a clean design and excellent mechanics. Once the iOS app is finished, we will compile and redesign and release. 
+
+Also, we hope to release this on the Android Wear and the Samsung Gear watches as well.
 
