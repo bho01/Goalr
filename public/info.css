@@ -38,7 +38,7 @@ background-color: black;
  	background-size: cover;
  	-o-background-size: cover;  
 }
-.text-vertical h1{
+.text-vertical{
 	color:white;
 	display: table-cell;
 	text-align: center;
