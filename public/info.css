@@ -27,3 +27,14 @@ html,body{
 	padding-bottom: 20px;
 	opacity:0;
 }
+.containertwo{
+background : url('http://images1.laweekly.com/imager/u/original/5838385/porter_robinson_by_ryan_loughlin_2.jpg') no-repeat center center scroll;
+	display: table;
+	position: relative;
+  	width:100%;
+  	height:100%;
+  	-webkit-background-size: cover;
+ 	-moz-background-size: cover;
+ 	background-size: cover;
+ 	-o-background-size: cover;  
+}
