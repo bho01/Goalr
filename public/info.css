@@ -38,7 +38,7 @@ background-color: black;
  	background-size: cover;
  	-o-background-size: cover;  
 }
-.text-vertical{
+.text-vertical h1{
 	color:white;
 	display: table-cell;
 	text-align: center;
@@ -81,3 +81,4 @@ background-color: black;
     from { opacity: 0; }
     to   { opacity: 1; }
 }
+
