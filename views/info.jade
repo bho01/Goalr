@@ -28,5 +28,12 @@ html(lang='en')
 		$(".text-vertical-center").append("<div class = 'not'><h1> scroll down for more </h1></div>")
 		$(".not").delay(1000).animate({opacity : 1}, 700)
 		}
+		var fadeIn = ('.containertwo');
+		$(window).scroll(function(){
+		f($(window).scrollTop()<10){
+         divs.stop(true,true).fadeIn("slow");
+   }
+});
+		
 		});
 		})
