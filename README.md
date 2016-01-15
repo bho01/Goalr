@@ -46,7 +46,7 @@ The interface would be challenging since the screen size is extremely small. At 
 
 Brendon is currently developing this on XCode. This project is aimed to finish at around late February. The test is on the Watch Test Folder.
 
-![alt tag](https://raw.github.com/ClevererMango27/Goalr/goalrpic.png)
+![alt tag](https://github.com/ClevererMango27/Goalr/blob/master/goalrpic.png)
 
 ### Android App (Goalr Android) by Brendon
 Essentially, we will compile the iOS source code from Goalr-iOS into Java using Silver, a Swift to Java Compiler. Parse push notifications and MongoDB servers and auth will remain the same. However, the design will be set to the Android Marshmellow standard Material Design. Material provides a beautiful interface with a clean design and excellent mechanics. Once the iOS app is finished, we will compile and redesign and release. 
