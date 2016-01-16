@@ -44,7 +44,9 @@ Auth will be done on the phone. The watch will recognize that the person unlocke
 
 The interface would be challenging since the screen size is extremely small. At the same time we want to incorporate at least most of the features that are in web and mobile. To solve that problem, we changed the UI completely to a page view controller. Each page will contain a circular progress bar of your goal. To get to another goal, you simply slide the screen left or right. To edit the goal, you simply tap on the goal. We also take advantage of the Force Touch capabilities of the Apple Watch. To delete, add, or rename the goal, you simply press harder. It wil then give two options, delete goal,add goal, and rename goal.
 
-Brendon is currently developing this on XCode. This project is aimed to finish at around late February. The test is on the Watch Test Folder.
+Brendon is currently developing this on Xcode. Bezel is used to simulate the Apple Watch. This project is aimed to finish at around late February. We hope to finish this ASAP. The test is on the Watch Test Folder. This this folder, we experiment and tinker around. In the actual app, we will put the final details and designs.
+
+![alt tag](https://github.com/ClevererMango27/Goalr/blob/master/goalrpic.png)
 
 ### Android App (Goalr Android) by Brendon
 Essentially, we will compile the iOS source code from Goalr-iOS into Java using Silver, a Swift to Java Compiler. Parse push notifications and MongoDB servers and auth will remain the same. However, the design will be set to the Android Marshmellow standard Material Design. Material provides a beautiful interface with a clean design and excellent mechanics. Once the iOS app is finished, we will compile and redesign and release. 
