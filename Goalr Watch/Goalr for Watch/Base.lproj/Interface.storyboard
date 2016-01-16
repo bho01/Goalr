@@ -10,7 +10,7 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Goalr_for_Watch" customModuleProvider="target">
                     <items>
-                        <imageView height="132" alignment="center" verticalAlignment="center" id="ccO-CJ-NCm"/>
+                        <imageView height="150" alignment="center" verticalAlignment="center" id="ccO-CJ-NCm"/>
                     </items>
                     <connections>
                         <outlet property="imageView" destination="ccO-CJ-NCm" id="e2c-tL-ttg"/>

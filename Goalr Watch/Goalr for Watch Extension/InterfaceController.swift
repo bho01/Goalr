@@ -24,7 +24,7 @@ class InterfaceController: WKInterfaceController {
         super.willActivate()
         
         //Progress bar animation
-        imageView.setImageNamed("arc")
+        imageView.setImageNamed("singulararc")
         imageView.startAnimatingWithImagesInRange(NSMakeRange(0, 100), duration: 2, repeatCount: 100)
         
     }
