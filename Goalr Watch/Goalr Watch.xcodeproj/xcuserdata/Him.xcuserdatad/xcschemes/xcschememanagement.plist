@@ -9,6 +9,16 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>Goalr for Watch.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>Notification - Goalr for Watch.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
@@ -23,6 +33,11 @@
 			<true/>
 		</dict>
 		<key>36C9EE851C445F83007B7DD7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>36CA33EC1C49D4FC00ABCB70</key>
 		<dict>
 			<key>primary</key>
 			<true/>

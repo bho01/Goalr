@@ -14,6 +14,14 @@
 		36C9EE751C445F83007B7DD7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36C9EE731C445F83007B7DD7 /* LaunchScreen.storyboard */; };
 		36C9EE801C445F83007B7DD7 /* Goalr_WatchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C9EE7F1C445F83007B7DD7 /* Goalr_WatchTests.swift */; };
 		36C9EE8B1C445F83007B7DD7 /* Goalr_WatchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C9EE8A1C445F83007B7DD7 /* Goalr_WatchUITests.swift */; };
+		36CA33F11C49D4FC00ABCB70 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36CA33EF1C49D4FC00ABCB70 /* Interface.storyboard */; };
+		36CA33F31C49D4FC00ABCB70 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36CA33F21C49D4FC00ABCB70 /* Assets.xcassets */; };
+		36CA33FA1C49D4FD00ABCB70 /* Goalr for Watch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 36CA33F91C49D4FD00ABCB70 /* Goalr for Watch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		36CA34011C49D4FD00ABCB70 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36CA34001C49D4FD00ABCB70 /* InterfaceController.swift */; };
+		36CA34031C49D4FD00ABCB70 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36CA34021C49D4FD00ABCB70 /* ExtensionDelegate.swift */; };
+		36CA34051C49D4FD00ABCB70 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36CA34041C49D4FD00ABCB70 /* NotificationController.swift */; };
+		36CA34071C49D4FD00ABCB70 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36CA34061C49D4FD00ABCB70 /* Assets.xcassets */; };
+		36CA340B1C49D4FD00ABCB70 /* Goalr for Watch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 36CA33ED1C49D4FC00ABCB70 /* Goalr for Watch.app */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +39,46 @@
 			remoteGlobalIDString = 36C9EE661C445F83007B7DD7;
 			remoteInfo = "Goalr Watch";
 		};
+		36CA33FB1C49D4FD00ABCB70 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 36C9EE5F1C445F83007B7DD7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 36CA33F81C49D4FD00ABCB70;
+			remoteInfo = "Goalr for Watch Extension";
+		};
+		36CA34091C49D4FD00ABCB70 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 36C9EE5F1C445F83007B7DD7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 36CA33EC1C49D4FC00ABCB70;
+			remoteInfo = "Goalr for Watch";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		36CA34111C49D4FD00ABCB70 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				36CA33FA1C49D4FD00ABCB70 /* Goalr for Watch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36CA34131C49D4FD00ABCB70 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				36CA340B1C49D4FD00ABCB70 /* Goalr for Watch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		36C9EE671C445F83007B7DD7 /* Goalr Watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Goalr Watch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +94,17 @@
 		36C9EE861C445F83007B7DD7 /* Goalr WatchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Goalr WatchUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		36C9EE8A1C445F83007B7DD7 /* Goalr_WatchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Goalr_WatchUITests.swift; sourceTree = "<group>"; };
 		36C9EE8C1C445F83007B7DD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		36CA33ED1C49D4FC00ABCB70 /* Goalr for Watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Goalr for Watch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		36CA33F01C49D4FC00ABCB70 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		36CA33F21C49D4FC00ABCB70 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		36CA33F41C49D4FC00ABCB70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		36CA33F91C49D4FD00ABCB70 /* Goalr for Watch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Goalr for Watch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		36CA33FF1C49D4FD00ABCB70 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		36CA34001C49D4FD00ABCB70 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		36CA34021C49D4FD00ABCB70 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		36CA34041C49D4FD00ABCB70 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		36CA34061C49D4FD00ABCB70 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		36CA34081C49D4FD00ABCB70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +129,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		36CA33F61C49D4FD00ABCB70 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -80,6 +145,8 @@
 				36C9EE691C445F83007B7DD7 /* Goalr Watch */,
 				36C9EE7E1C445F83007B7DD7 /* Goalr WatchTests */,
 				36C9EE891C445F83007B7DD7 /* Goalr WatchUITests */,
+				36CA33EE1C49D4FC00ABCB70 /* Goalr for Watch */,
+				36CA33FD1C49D4FD00ABCB70 /* Goalr for Watch Extension */,
 				36C9EE681C445F83007B7DD7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +157,8 @@
 				36C9EE671C445F83007B7DD7 /* Goalr Watch.app */,
 				36C9EE7B1C445F83007B7DD7 /* Goalr WatchTests.xctest */,
 				36C9EE861C445F83007B7DD7 /* Goalr WatchUITests.xctest */,
+				36CA33ED1C49D4FC00ABCB70 /* Goalr for Watch.app */,
+				36CA33F91C49D4FD00ABCB70 /* Goalr for Watch Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -125,6 +194,37 @@
 			path = "Goalr WatchUITests";
 			sourceTree = "<group>";
 		};
+		36CA33EE1C49D4FC00ABCB70 /* Goalr for Watch */ = {
+			isa = PBXGroup;
+			children = (
+				36CA33EF1C49D4FC00ABCB70 /* Interface.storyboard */,
+				36CA33F21C49D4FC00ABCB70 /* Assets.xcassets */,
+				36CA33F41C49D4FC00ABCB70 /* Info.plist */,
+			);
+			path = "Goalr for Watch";
+			sourceTree = "<group>";
+		};
+		36CA33FD1C49D4FD00ABCB70 /* Goalr for Watch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				36CA34001C49D4FD00ABCB70 /* InterfaceController.swift */,
+				36CA34021C49D4FD00ABCB70 /* ExtensionDelegate.swift */,
+				36CA34041C49D4FD00ABCB70 /* NotificationController.swift */,
+				36CA34061C49D4FD00ABCB70 /* Assets.xcassets */,
+				36CA34081C49D4FD00ABCB70 /* Info.plist */,
+				36CA33FE1C49D4FD00ABCB70 /* Supporting Files */,
+			);
+			path = "Goalr for Watch Extension";
+			sourceTree = "<group>";
+		};
+		36CA33FE1C49D4FD00ABCB70 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				36CA33FF1C49D4FD00ABCB70 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,10 +235,12 @@
 				36C9EE631C445F83007B7DD7 /* Sources */,
 				36C9EE641C445F83007B7DD7 /* Frameworks */,
 				36C9EE651C445F83007B7DD7 /* Resources */,
+				36CA34131C49D4FD00ABCB70 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				36CA340A1C49D4FD00ABCB70 /* PBXTargetDependency */,
 			);
 			name = "Goalr Watch";
 			productName = "Goalr Watch";
@@ -181,6 +283,40 @@
 			productReference = 36C9EE861C445F83007B7DD7 /* Goalr WatchUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		36CA33EC1C49D4FC00ABCB70 /* Goalr for Watch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 36CA34121C49D4FD00ABCB70 /* Build configuration list for PBXNativeTarget "Goalr for Watch" */;
+			buildPhases = (
+				36CA33EB1C49D4FC00ABCB70 /* Resources */,
+				36CA34111C49D4FD00ABCB70 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				36CA33FC1C49D4FD00ABCB70 /* PBXTargetDependency */,
+			);
+			name = "Goalr for Watch";
+			productName = "Goalr for Watch";
+			productReference = 36CA33ED1C49D4FC00ABCB70 /* Goalr for Watch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		36CA33F81C49D4FD00ABCB70 /* Goalr for Watch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 36CA34101C49D4FD00ABCB70 /* Build configuration list for PBXNativeTarget "Goalr for Watch Extension" */;
+			buildPhases = (
+				36CA33F51C49D4FD00ABCB70 /* Sources */,
+				36CA33F61C49D4FD00ABCB70 /* Frameworks */,
+				36CA33F71C49D4FD00ABCB70 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Goalr for Watch Extension";
+			productName = "Goalr for Watch Extension";
+			productReference = 36CA33F91C49D4FD00ABCB70 /* Goalr for Watch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -205,6 +341,14 @@
 						DevelopmentTeam = ZDXRK6UNH5;
 						TestTargetID = 36C9EE661C445F83007B7DD7;
 					};
+					36CA33EC1C49D4FC00ABCB70 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = ZDXRK6UNH5;
+					};
+					36CA33F81C49D4FD00ABCB70 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = ZDXRK6UNH5;
+					};
 				};
 			};
 			buildConfigurationList = 36C9EE621C445F83007B7DD7 /* Build configuration list for PBXProject "Goalr Watch" */;
@@ -223,6 +367,8 @@
 				36C9EE661C445F83007B7DD7 /* Goalr Watch */,
 				36C9EE7A1C445F83007B7DD7 /* Goalr WatchTests */,
 				36C9EE851C445F83007B7DD7 /* Goalr WatchUITests */,
+				36CA33EC1C49D4FC00ABCB70 /* Goalr for Watch */,
+				36CA33F81C49D4FD00ABCB70 /* Goalr for Watch Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -249,6 +395,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36CA33EB1C49D4FC00ABCB70 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36CA33F31C49D4FC00ABCB70 /* Assets.xcassets in Resources */,
+				36CA33F11C49D4FC00ABCB70 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36CA33F71C49D4FD00ABCB70 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36CA34071C49D4FD00ABCB70 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +443,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		36CA33F51C49D4FD00ABCB70 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36CA34051C49D4FD00ABCB70 /* NotificationController.swift in Sources */,
+				36CA34031C49D4FD00ABCB70 /* ExtensionDelegate.swift in Sources */,
+				36CA34011C49D4FD00ABCB70 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -292,6 +465,16 @@
 			isa = PBXTargetDependency;
 			target = 36C9EE661C445F83007B7DD7 /* Goalr Watch */;
 			targetProxy = 36C9EE871C445F83007B7DD7 /* PBXContainerItemProxy */;
+		};
+		36CA33FC1C49D4FD00ABCB70 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 36CA33F81C49D4FD00ABCB70 /* Goalr for Watch Extension */;
+			targetProxy = 36CA33FB1C49D4FD00ABCB70 /* PBXContainerItemProxy */;
+		};
+		36CA340A1C49D4FD00ABCB70 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 36CA33EC1C49D4FC00ABCB70 /* Goalr for Watch */;
+			targetProxy = 36CA34091C49D4FD00ABCB70 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -310,6 +493,14 @@
 				36C9EE741C445F83007B7DD7 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		36CA33EF1C49D4FC00ABCB70 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				36CA33F01C49D4FC00ABCB70 /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -470,6 +661,68 @@
 			};
 			name = Release;
 		};
+		36CA340C1C49D4FD00ABCB70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = Goalr_for_Watch_Extension;
+				INFOPLIST_FILE = "Goalr for Watch/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "Goalr.Goalr-Watch.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		36CA340D1C49D4FD00ABCB70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = Goalr_for_Watch_Extension;
+				INFOPLIST_FILE = "Goalr for Watch/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "Goalr.Goalr-Watch.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
+		36CA340E1C49D4FD00ABCB70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Goalr for Watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Goalr.Goalr-Watch.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		36CA340F1C49D4FD00ABCB70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Goalr for Watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Goalr.Goalr-Watch.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -489,6 +742,7 @@
 				36C9EE911C445F83007B7DD7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		36C9EE921C445F83007B7DD7 /* Build configuration list for PBXNativeTarget "Goalr WatchTests" */ = {
 			isa = XCConfigurationList;
@@ -497,12 +751,30 @@
 				36C9EE941C445F83007B7DD7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		36C9EE951C445F83007B7DD7 /* Build configuration list for PBXNativeTarget "Goalr WatchUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				36C9EE961C445F83007B7DD7 /* Debug */,
 				36C9EE971C445F83007B7DD7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		36CA34101C49D4FD00ABCB70 /* Build configuration list for PBXNativeTarget "Goalr for Watch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				36CA340E1C49D4FD00ABCB70 /* Debug */,
+				36CA340F1C49D4FD00ABCB70 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		36CA34121C49D4FD00ABCB70 /* Build configuration list for PBXNativeTarget "Goalr for Watch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				36CA340C1C49D4FD00ABCB70 /* Debug */,
+				36CA340D1C49D4FD00ABCB70 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
