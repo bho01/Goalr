@@ -53,3 +53,6 @@ Essentially, we will compile the iOS source code from Goalr-iOS into Java using 
 
 Also, we hope to release this on the Android Wear and the Samsung Gear watches as well.
 
+### Managr by Goalr (Managr) by Brendon
+
+
