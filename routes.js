@@ -59,5 +59,8 @@ module.exports = function(app){
   	app.get('/info', function(req,res){
   		res.render('info');
   	});
+  	app.get('/managr', function(req,res){
+  		res.render('managr');
+  	});
 
 }
