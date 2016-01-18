@@ -12,7 +12,10 @@ import Foundation
 
 class InterfaceController: WKInterfaceController {
 
+    
     @IBOutlet var imageView: WKInterfaceImage!
+    @IBOutlet var editBtn: WKInterfaceButton!
+ 
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
         
@@ -23,9 +26,12 @@ class InterfaceController: WKInterfaceController {
         // This method is called when watch view controller is about to be visible to user
         super.willActivate()
         
+        
+        
         //Progress bar animation
         imageView.setImageNamed("singulararc")
-        imageView.startAnimatingWithImagesInRange(NSMakeRange(0, 100), duration: 2, repeatCount: 100)
+        imageView.startAnimatingWithImagesInRange(NSMakeRange(0, 101), duration: 1.5, repeatCount: 1)
+        
         
     }
 

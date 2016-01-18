@@ -10,14 +10,18 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Goalr_for_Watch" customModuleProvider="target">
                     <items>
-                        <imageView height="150" alignment="center" verticalAlignment="center" id="ccO-CJ-NCm"/>
+                        <button width="1" height="29.5" alignment="left" title="Edit" id="7s0-Vl-mvl">
+                            <color key="backgroundColor" red="0.17439230556190863" green="0.18310291230366493" blue="0.1634330350564949" alpha="1" colorSpace="calibratedRGB"/>
+                        </button>
+                        <imageView width="117" height="115" alignment="center" verticalAlignment="center" id="vVo-YX-F4I"/>
                     </items>
                     <connections>
-                        <outlet property="imageView" destination="ccO-CJ-NCm" id="e2c-tL-ttg"/>
+                        <outlet property="editBtn" destination="7s0-Vl-mvl" id="515-2N-2F3"/>
+                        <outlet property="imageView" destination="vVo-YX-F4I" id="nHA-kx-soo"/>
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="220" y="345"/>
+            <point key="canvasLocation" x="220" y="303"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
