@@ -10,8 +10,10 @@
  	-o-background-size: cover;  
 }
 .mtext{
-  vertical-align: middle;
-  text-align: center;
+  display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+	color:white;
 }
 .goals{
   color: white;
