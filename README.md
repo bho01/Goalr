@@ -60,7 +60,7 @@ Also, we hope to release this on the Android Wear and the Samsung Gear watches a
 #M A N A G R by Goalr
 Currently being developed by Brendon Ho
 
-This isn't put inside a separate folder because it is a sub-app of Goalr.
+This isn't put inside a separate repository because it is a sub-app of Goalr.
 
 This is an app that will be made for iOS and Android. It is targeted towards those who have trouble managing their time. You can read more about it at: http://goalr.herokuapp.com/managr/
 
