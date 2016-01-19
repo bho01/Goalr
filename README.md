@@ -57,7 +57,9 @@ Also, we hope to release this on the Android Wear and the Samsung Gear watches a
 
 ### Managr by Goalr (Managr) by Brendon
 This is an app that will be made for iOS and Android. It is targeted towards those who have trouble managing their time. You can read more about it at: http://goalr.herokuapp.com/managr/
+
 You will need a goalr account for this. If you haven't registered yet we suggest you do so ASAP
+
 Register here: http://goalr.herokuapp.com/register/
 ![alt tag](https://github.com/ClevererMango27/Goalr/blob/master/MANAGR.jpg)
 
