@@ -13,8 +13,10 @@
   display: table-cell;
 	text-align: center;
 	vertical-align: middle;
-	color:white;
+	color: #8c1aff;
+	letter-spacing: 4px;
+	
 }
 .goals{
-  color: white;
+  color: #8c1aff;
 }
