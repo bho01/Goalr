@@ -55,7 +55,11 @@ Essentially, we will compile the iOS source code from Goalr-iOS into Java using 
 
 Also, we hope to release this on the Android Wear and the Samsung Gear watches as well.
 
-### Managr by Goalr (Managr) by Brendon
+#M A N A G R by Goalr
+Currently being developed by Brendon Ho
+
+This isn't put inside a separate folder because it is a sub-app of Goalr.
+
 This is an app that will be made for iOS and Android. It is targeted towards those who have trouble managing their time. You can read more about it at: http://goalr.herokuapp.com/managr/
 
 You will need a goalr account for this. If you haven't registered yet we suggest you do so ASAP
