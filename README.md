@@ -1,7 +1,9 @@
 # Goalr
 
   Our main goal is to help people pursue their dreams and complete their short and long term goals. To do that we must reach out to every single device, and on any other screen size. That includes computers, phones, tablets, smartwatches and other wearables. We believe this app will help people to move forward and achieve their goal, whether it's to get an A on a test or to make it in the olympics.
+ 
   You can check it out on http://goalr.herokuapp.com/
+ 
   and you can learn more at http://goalr.herokuapp.com/info/
 
 ## Contributors 
