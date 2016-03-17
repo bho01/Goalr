@@ -1,4 +1,4 @@
-# Goalr
+# Goalr-!!!!!!Project Canceled!!!!!!
 
   Our main goal is to help people pursue their dreams and complete their short and long term goals. To do that we must reach out to every single device, and on any other screen size. That includes computers, phones, tablets, smartwatches and other wearables. We believe this app will help people to move forward and achieve their goal, whether it's to get an A on a test or to make it in the olympics.
  
@@ -70,4 +70,5 @@ Register here: http://goalr.herokuapp.com/register/
 
 This app is aimed to finish at around Late February. Around the time Goalr iOS finishes
 ![alt tag](https://github.com/ClevererMango27/Goalr/blob/master/MANAGR.jpg)
+
 
